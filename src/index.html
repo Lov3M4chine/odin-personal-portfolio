@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-    <div class="text-blue-600">Test</div>
+    <nav id="nav" class="h-screen fixed flex items-center hidden">
+        <menu class="h-screen flex flex-col justify-center text-2xl pt-20 pb-20 gap-10">
+            <li class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10"><a href="#home-section"> William Alderman</a></li>
+            <div class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10">|</div>
+            <li class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10"><a href="#work-section"> Work</a></li>
+            <div class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10">|</div>
+            <li class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10"><a href="#about-section"> About</a></li>
+            <div class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10">|</div>
+            <li class="-rotate-90 whitespace-nowrap flex justify-end items-start w-10"><a href="#contact-section">Contact</a></li>
+        </menu>
+    </nav>
+    
+    <div id="home-section" class="h-screen flex justify-center items-center">
+        <div class="main-home-content flex items-end">
+            <div class="introduction flex flex-col w-1/2 gap-4 pr-10">
+                <h1 class="text-4xl">William Alderman</h1>
+                <p class="border-t-2 border-black p-3">Full stack engineer and relentless problem solver.</p>
+            </div>
+            <menu class="w-1/2 text-9xl">
+                <li><a href="#work-section">Work</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </menu>
+        </div>
+    </div>
 </body>
 </html>
