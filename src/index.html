@@ -10,13 +10,13 @@
 
     <nav id="nav" class="h-screen fixed flex items-center">
         <menu class="h-screen flex flex-col justify-center text-2xl pt-20 pb-20 gap-10">
-            <li class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10"><a href="#home-section"> William Alderman</a></li>
+            <li class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10 hover:translate-x-3"><a href="#home-section"> William Alderman</a></li>
             <div class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10">|</div>
-            <li class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10"><a href="#work-section"> Work</a></li>
+            <li class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10 hover:translate-x-3"><a href="#work-section"> Work</a></li>
             <div class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10">|</div>
-            <li class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10"><a href="#about-section"> About</a></li>
+            <li class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10 hover:translate-x-3"><a href="#about-section"> About</a></li>
             <div class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10">|</div>
-            <li class="-rotate-90 whitespace-nowrap flex justify-end items-start w-10"><a href="#contact-section">Contact</a></li>
+            <li class="-rotate-90 whitespace-nowrap flex justify-end items-start w-10 hover:translate-x-3"><a href="#contact-section">Contact</a></li>
         </menu>
     </nav>
     
@@ -26,43 +26,43 @@
                 <h1 class="text-4xl font-bold">William Alderman</h1>
                 <p class="border-t-2 border-black p-3">Full stack engineer and relentless problem solver.</p>
             </div>
-            <menu class="w-1/2 text-9xl font-Handjet font-extralight">
-                <li><a href="#work-section">Work</a></li>
-                <li><a href="#about-section">About</a></li>
-                <li><a href="#contact-section">Contact</a></li>
+            <menu class="w-1/2 text-9xl font-Handjet font-normal">
+                <li class="hover:font-extralight"><a href="#work-section">Work</a></li>
+                <li class="hover:font-extralight"><a href="#about-section">About</a></li>
+                <li class="hover:font-extralight"><a href="#contact-section">Contact</a></li>
             </menu>
         </div>
     </div>
 
 
     <div id="work-section" class="min-h-screen h-fit ml-40 mr-40">
-        <h2 class="section-label">Selected Projects</h2>
+        <h2 class="section-label font-Handjet font-normal">Selected Projects</h2>
         <ul class="flex flex-col items-center text-5xl gap-10 mt-10 mb-10">
-            <li class="flex gap-20 items-center justify-between">
+            <li class="flex gap-20 items-center justify-between sepia hover:sepia-0">
                 <div>
-                    <a href="#work-section">Project 1</a>
+                    <a class="hover:font-black" href="#work-section">Project 1</a>
+                    <p class="text-lg">Description of skill developed</p>
+                </div>
+                <img class="w-96 h-auto " src="./imgs/placeholder.jpg" alt="">
+            </li>
+            <li class="flex gap-20 items-center justify-between sepia hover:sepia-0">
+                <img class="w-96 h-auto" src="./imgs/placeholder.jpg" alt="">
+                <div>
+                    <a class="hover:font-black" href="#work-section">Project 2</a>
+                    <p class="text-lg">Description of skill developed</p>
+                </div>
+            </li>
+            <li class="flex gap-20 items-center justify-between sepia hover:sepia-0">
+                <div>
+                    <a class="hover:font-black" href="#work-section">Project 3</a>
                     <p class="text-lg">Description of skill developed</p>
                 </div>
                 <img class="w-96 h-auto" src="./imgs/placeholder.jpg" alt="">
             </li>
-            <li class="flex gap-20 items-center justify-between">
+            <li class="flex gap-20 items-center justify-between sepia hover:sepia-0">
                 <img class="w-96 h-auto" src="./imgs/placeholder.jpg" alt="">
                 <div>
-                    <a href="#work-section">Project 2</a>
-                    <p class="text-lg">Description of skill developed</p>
-                </div>
-            </li>
-            <li class="flex gap-20 items-center justify-between">
-                <div>
-                    <a href="#work-section">Project 3</a>
-                    <p class="text-lg">Description of skill developed</p>
-                </div>
-                <img class="w-96 h-auto" src="./imgs/placeholder.jpg" alt="">
-            </li>
-            <li class="flex gap-20 items-center justify-between">
-                <img class="w-96 h-auto" src="./imgs/placeholder.jpg" alt="">
-                <div>
-                    <a href="#work-section">Project 4</a>
+                    <a class="hover:font-black" href="#work-section">Project 4</a>
                     <p class="text-lg">Description of skill developed</p>
                 </div>
             </li>
@@ -70,7 +70,7 @@
     </div>
 
     <div id="about-section" class="min-h-screen h-fit flex flex-col ml-40 mr-40">
-        <h2 class="section-label">About Me</h2>
+        <h2 class="section-label font-Handjet font-normal">About Me</h2>
         <div class="main-about-content flex">
             <div class="flex flex-col justify-center items-center w-1/2 gap-4 pr-10 text-lg">
                 <p>Hello and thank you for visiting my site. My name is William Alderman, a self-taught full-stack software engineer who is actively seeking opportunities to expand my skillset. </p>
@@ -93,7 +93,7 @@
     </div>
 
     <div id="contact-section" class="h-screen flex flex-col ml-40 mr-40">
-        <h2 class="section-label">Contact</h2>
+        <h2 class="section-label font-Handjet font-normal">Contact</h2>
         <div class="flex flex-wrap justify-between">
             <address class="p-6 text-4xl">
                 Phone: <a href="tel:+14806884307">(480) 688-4307</a> <br />
