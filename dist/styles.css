@@ -497,14 +497,21 @@ video {
 .flex {
   display: flex;
 }
-.hidden {
-  display: none;
-}
 .h-auto {
   height: auto;
 }
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.h-full {
+  height: 100%;
+}
 .h-screen {
   height: 100vh;
+}
+.min-h-screen {
+  min-height: 100vh;
 }
 .w-1\/2 {
   width: 50%;
@@ -515,12 +522,18 @@ video {
 .w-96 {
   width: 24rem;
 }
+.max-w-sm {
+  max-width: 24rem;
+}
 .-rotate-90 {
   --tw-rotate: -90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .flex-col {
   flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }
 .items-start {
   align-items: flex-start;
@@ -543,23 +556,20 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.justify-around {
+  justify-content: space-around;
+}
 .gap-10 {
   gap: 2.5rem;
-}
-.gap-4 {
-  gap: 1rem;
-}
-.gap-5 {
-  gap: 1.25rem;
 }
 .gap-20 {
   gap: 5rem;
 }
+.gap-4 {
+  gap: 1rem;
+}
 .whitespace-nowrap {
   white-space: nowrap;
-}
-.border-b-2 {
-  border-bottom-width: 2px;
 }
 .border-t-2 {
   border-top-width: 2px;
@@ -571,6 +581,9 @@ video {
 .p-3 {
   padding: 0.75rem;
 }
+.p-6 {
+  padding: 1.5rem;
+}
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -579,6 +592,12 @@ video {
 }
 .pt-20 {
   padding-top: 5rem;
+}
+.font-Handjet {
+  font-family: Handjet, sans-serif;
+}
+.font-Play {
+  font-family: Play, sans-serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -592,10 +611,6 @@ video {
   font-size: 3rem;
   line-height: 1;
 }
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
@@ -604,8 +619,61 @@ video {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
+.font-extralight {
+  font-weight: 200;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-normal {
+  font-weight: 400;
+}
+
+.section-label {
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    border-bottom-width: 2px;
+    border-color: black;
+    white-space: nowrap;
+}
+
+/* handjet-200 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Handjet';
+    font-style: normal;
+    font-weight: 200;
+    src: url(2f2b70af0dd3ba5104bb.woff2) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* handjet-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Handjet';
+    font-style: normal;
+    font-weight: 400;
+    src: url(39b092bc3fa736266af2.woff2) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* play-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url(4d7106caa0be8627050c.woff2) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* play-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url(46942a44117e36f438ca.woff2) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
 

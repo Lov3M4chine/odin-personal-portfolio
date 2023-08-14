@@ -4,7 +4,12 @@ module.exports = {
       './src/**/*.js',
     ],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          Handjet: ['Handjet', 'sans-serif'],
+          Play: ['Play', 'sans-serif'],
+        },
+      },
     },
     variants: {
       extend: {},
