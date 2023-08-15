@@ -10,8 +10,12 @@
     color: yellow;
 }
 
+.accent-bg-color {
+  background-color: yellow;
+}
+
 .background-color {
-    background-color: #263238;
+    background-image: linear-gradient(#172125, #3d6a7c);
 }
 
 @font-face {
@@ -131,22 +135,22 @@ html {
 }
   
 .gallery > img:nth-child(2) {
-    animation-delay: calc(-0.2* var(--d));
+    animation-delay: calc(-.2* var(--d));
     --r: -13deg;
 }
   
 .gallery > img:nth-child(3) {
-    animation-delay: calc(-0.4* var(--d));
+    animation-delay: calc(-.4* var(--d));
     --r: 10deg;
 }
   
 .gallery > img:nth-child(4) {
-    animation-delay: calc(-0.6* var(--d));
+    animation-delay: calc(-.6* var(--d));
     --r: 19deg;
 }
   
 .gallery > img:nth-child(5) {
-    animation-delay: calc(-0.8* var(--d));
+    animation-delay: calc(-.8* var(--d));
     --r: -6deg;
 }
   
@@ -325,5 +329,32 @@ h2:after {
         transform: translate(-22px, 5px) skew(21deg); 
     }
 }
+
+.typing-wrapper .blinking-wrapper {
+  background-color: #9ba5b4;
+  font-size: 10rem;
+  font-family: "Play", sans-serif;
+}
+
+.blinking-wrapper h1 {
+  width: 14ch;
+  border-right: 4px solid rgb(180, 171, 171);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+}
+@keyframes typing {
+  from {
+      width: 0;
+  }
+}
+@keyframes blink-caret {
+  50% {
+      border-color: transparent;
+  }
+}
+
+
+
 
 

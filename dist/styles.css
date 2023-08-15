@@ -485,6 +485,18 @@ video {
 .fixed {
   position: fixed;
 }
+.-left-1\/2 {
+  left: -50%;
+}
+.top-1\/2 {
+  top: 50%;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-20 {
+  z-index: 20;
+}
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -528,8 +540,20 @@ video {
 .max-w-sm {
   max-width: 24rem;
 }
+.-translate-x-60 {
+  --tw-translate-x: -15rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-x-64 {
+  --tw-translate-x: -16rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .-rotate-90 {
   --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.rotate-90 {
+  --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .flex-col {
@@ -568,6 +592,9 @@ video {
 .gap-4 {
   gap: 1rem;
 }
+.gap-40 {
+  gap: 10rem;
+}
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -593,9 +620,6 @@ video {
 .pt-20 {
   padding-top: 5rem;
 }
-.text-center {
-  text-align: center;
-}
 .font-Handjet {
   font-family: Handjet, sans-serif;
 }
@@ -606,16 +630,16 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
-}
-.text-6xl {
-  font-size: 3.75rem;
   line-height: 1;
 }
 .text-9xl {
@@ -630,11 +654,12 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.font-bold {
-  font-weight: 700;
-}
 .font-normal {
   font-weight: 400;
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .sepia {
   --tw-sepia: sepia(100%);
@@ -649,8 +674,12 @@ video {
     color: yellow;
 }
 
+.accent-bg-color {
+  background-color: yellow;
+}
+
 .background-color {
-    background-color: #263238;
+    background-image: linear-gradient(#172125, #3d6a7c);
 }
 
 @font-face {
@@ -771,22 +800,22 @@ html {
 }
   
 .gallery > img:nth-child(2) {
-    animation-delay: calc(-0.2* var(--d));
+    animation-delay: calc(-.2* var(--d));
     --r: -13deg;
 }
   
 .gallery > img:nth-child(3) {
-    animation-delay: calc(-0.4* var(--d));
+    animation-delay: calc(-.4* var(--d));
     --r: 10deg;
 }
   
 .gallery > img:nth-child(4) {
-    animation-delay: calc(-0.6* var(--d));
+    animation-delay: calc(-.6* var(--d));
     --r: 19deg;
 }
   
 .gallery > img:nth-child(5) {
-    animation-delay: calc(-0.8* var(--d));
+    animation-delay: calc(-.8* var(--d));
     --r: -6deg;
 }
   
@@ -966,19 +995,43 @@ h2:after {
     }
 }
 
+.typing-wrapper .blinking-wrapper {
+  background-color: #9ba5b4;
+  font-size: 10rem;
+  font-family: "Play", sans-serif;
+}
+
+.blinking-wrapper h1 {
+  width: 14ch;
+  border-right: 4px solid rgb(180, 171, 171);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+}
+@keyframes typing {
+  from {
+      width: 0;
+  }
+}
+@keyframes blink-caret {
+  50% {
+      border-color: transparent;
+  }
+}
 .hover\:translate-x-3:hover {
   --tw-translate-x: 0.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
 .hover\:font-extralight:hover {
   font-weight: 200;
 }
-
 .hover\:sepia-0:hover {
   --tw-sepia: sepia(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+
+
+
 
 
 
