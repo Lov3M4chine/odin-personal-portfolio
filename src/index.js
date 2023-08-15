@@ -162,6 +162,37 @@ class TextScramble {
   
   next()
 
+  let burger = document.getElementById('burger');
+  let nav = document.getElementById('main-nav');
+  
+  // Existing burger button click event listener
+  burger.addEventListener('click', function(e){
+      this.classList.toggle('is-open');
+      nav.classList.toggle('is-open');
+  });
+  
+  // Get all the navigation links
+  let navLinks = document.querySelectorAll('.nav-link');
+  
+  // Attach a click event listener to each navigation link
+  navLinks.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+          
+          // Trigger a click event on the burger button
+          setTimeout(function() {
+            
+            // Trigger a click event on the burger button after the delay
+            burger.click();
+
+        }, 800);
+  
+          // If you want to prevent the default action of the link (e.g., jumping to the anchor), 
+          // you can uncomment the following line.
+          // e.preventDefault();
+      });
+  });
+  
+
 
 
 
