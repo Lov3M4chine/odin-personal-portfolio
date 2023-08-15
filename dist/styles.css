@@ -1284,6 +1284,10 @@ h2:after {
     margin: 0px;
   }
 
+  .max-tablet\:m-40 {
+    margin: 10rem;
+  }
+
   .max-tablet\:ml-0 {
     margin-left: 0px;
   }
@@ -1306,6 +1310,26 @@ h2:after {
 
   .max-tablet\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .max-tablet\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .max-tablet\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .max-tablet\:ml-32 {
+    margin-left: 8rem;
+  }
+
+  .max-tablet\:mr-32 {
+    margin-right: 8rem;
+  }
+
+  .max-tablet\:ml-16 {
+    margin-left: 4rem;
   }
 
   .max-tablet\:block {
@@ -1338,6 +1362,11 @@ h2:after {
 
   .max-tablet\:w-full {
     width: 100%;
+  }
+
+  .max-tablet\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .max-tablet\:-translate-x-7 {
