@@ -72,17 +72,7 @@ html {
 .slide-in-left.active {
     animation: slideInFromLeft 1.5s forwards;
 }
-
-.slide-in-right {
-    transform: translateX(100%);
-    opacity: 0;
-}
-
-.slide-in-right.active {
-    animation: slideInFromRight 1.5s forwards;
-}
-
-@keyframes slideInFromLeft {
+"
     0% {
         transform: translateX(-100%);
         opacity: 0;
