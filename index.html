@@ -12,7 +12,7 @@
         <menu class="h-screen flex flex-col justify-center text-2xl pt-20 pb-20 gap-10">
             <li class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10 hover:translate-x-3"><a href="#home-section"> William Alderman</a></li>
             <div class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10">|</div>
-            <li class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10 hover:translate-x-3"><a href="#work-section"> Work</a></li>
+            <li class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10 hover:translate-x-3"><a href="#projects-section"> Projects</a></li>
             <div class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10">|</div>
             <li class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10 hover:translate-x-3"><a href="#about-section"> About</a></li>
             <div class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10">|</div>
@@ -27,7 +27,7 @@
                 <p class="border-t-2 border-black p-3">Full stack engineer and relentless problem solver.</p>
             </div>
             <menu class="w-1/2 text-9xl font-Handjet font-normal">
-                <li class="hover:font-extralight"><a href="#work-section">Work</a></li>
+                <li class="hover:font-extralight"><a href="#projects-section">Projects</a></li>
                 <li class="hover:font-extralight"><a href="#about-section">About</a></li>
                 <li class="hover:font-extralight"><a href="#contact-section">Contact</a></li>
             </menu>
@@ -35,34 +35,34 @@
     </div>
 
 
-    <div id="work-section" class="min-h-screen h-fit ml-40 mr-40">
+    <div id="projects-section" class="min-h-screen h-fit ml-40 mr-40">
         <h2 class="section-label font-Handjet font-normal">Selected Projects</h2>
         <ul class="flex flex-col items-center text-5xl gap-10 mt-10 mb-10">
-            <li class="flex gap-20 items-center justify-between sepia hover:sepia-0">
+            <li class="flex gap-20 items-center justify-between sepia hover:sepia-0 slide-in-left">
                 <div>
-                    <a class="hover:font-black" href="#work-section">Project 1</a>
+                    <a class="hover:font-black" href="#projects-section">Project 1</a>
                     <p class="text-lg">Description of skill developed</p>
                 </div>
                 <img class="w-96 h-auto " src="./imgs/placeholder.jpg" alt="">
             </li>
-            <li class="flex gap-20 items-center justify-between sepia hover:sepia-0">
+            <li class="flex gap-20 items-center justify-between sepia hover:sepia-0 slide-in-right">
                 <img class="w-96 h-auto" src="./imgs/placeholder.jpg" alt="">
                 <div>
-                    <a class="hover:font-black" href="#work-section">Project 2</a>
+                    <a class="hover:font-black" href="#projects-section">Project 2</a>
                     <p class="text-lg">Description of skill developed</p>
                 </div>
             </li>
-            <li class="flex gap-20 items-center justify-between sepia hover:sepia-0">
+            <li class="flex gap-20 items-center justify-between sepia hover:sepia-0 slide-in-left">
                 <div>
-                    <a class="hover:font-black" href="#work-section">Project 3</a>
+                    <a class="hover:font-black" href="#projects-section">Project 3</a>
                     <p class="text-lg">Description of skill developed</p>
                 </div>
                 <img class="w-96 h-auto" src="./imgs/placeholder.jpg" alt="">
             </li>
-            <li class="flex gap-20 items-center justify-between sepia hover:sepia-0">
+            <li class="flex gap-20 items-center justify-between sepia hover:sepia-0 slide-in-right">
                 <img class="w-96 h-auto" src="./imgs/placeholder.jpg" alt="">
                 <div>
-                    <a class="hover:font-black" href="#work-section">Project 4</a>
+                    <a class="hover:font-black" href="#projects-section">Project 4</a>
                     <p class="text-lg">Description of skill developed</p>
                 </div>
             </li>
@@ -72,21 +72,19 @@
     <div id="about-section" class="min-h-screen h-fit flex flex-col ml-40 mr-40">
         <h2 class="section-label font-Handjet font-normal">About Me</h2>
         <div class="main-about-content flex">
-            <div class="flex flex-col justify-center items-center w-1/2 gap-4 pr-10 text-lg">
+            <div class="flex flex-col justify-start items-center mt-10 w-1/2 gap-4 pr-10 text-lg">
                 <p>Hello and thank you for visiting my site. My name is William Alderman, a self-taught full-stack software engineer who is actively seeking opportunities to expand my skillset. </p>
                 <p>With the help of the Odin Project, an open source world-class coding curriculum, I left the comforts of my previous career in finance (broker-dealer) to jump into the computer science industry. I made the jump because I love coding and solving complex problems and discovered my passion and competence for it after my undergraduate at Arizona State University.</p>
                 <p>I am proficient in Command Line Interface, Git, Github, HTML, CSS, Chrome Dev Tools, Javascript, React, NodeJS, and C++ (from the game development side of things).</p>
                 <p>I am diligent, disciplined, detail-oriented, dedicated, meticulous, personable, and precise; with extensive experience in professional work environments and team collaboration.</p>
                 <p>At the early age of six I began building computers and programming as a hobby with my dad, a Microprocessor Technician at Intel. Since then I've expanded my skillset through professional career development, university learning, self-teaching, and hobbyist pursuits. I like to enjoy the best of both the technical and natural worlds. I've dabbled in video game development in Unreal, I am constantly organizing my games library, and I identify as a big Star Wars nerd. I also love backpacking trips, travelling abroad, and have recently discovered the joy of bicycles and parenthood (perhaps the greatest challenge of them all).</p>
             </div>
-            <div class="h-full w-1/2 text-xl mt-10 flex flex-col justify-around gap-10">
-                <div>
-                    <p>Enthusiastic learner and passionate educator</p>
-                    <img class="h-auto max-w-sm" src="./imgs/professional-photo.png" alt="">
-                </div>
-                <div>
-                    <p>Collaborative by nature</p>
+            <div class="w-1/2 text-xl mt-10 mb-20 flex flex-col justify-between items-center gap-10">
+                <div class="gallery">
                     <img class="h-auto max-w-sm" src="./imgs/personal-photo.jpg" alt="">
+                    <img class="h-auto max-w-sm" src="./imgs/personal-photo3.jpg" alt="">
+                    <img class="h-auto max-w-sm" src="./imgs/professional-photo.png" alt="">
+                    <img class="h-auto max-w-sm" src="./imgs/professional-photo2.jpg" alt="">
                 </div>
             </div>
         </div>
