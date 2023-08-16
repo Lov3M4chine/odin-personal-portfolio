@@ -10,67 +10,72 @@
   <body
     class="font-Play background-color primary-text-color max-tablet:m-0 max-tablet:p-0 max-tablet:flex max-tablet:flex-col max-tablet:justify-center w-screen min-w-fit"
   >
+
+<!-- ——————————————————————————————————————————————————
+Desktop Nav
+—————————————————————————————————————————————————— -->
+
     <nav id="nav" class="h-screen fixed flex items-center max-tablet:hidden">
       <div class="nav-menu-container">
         <menu
-          class="h-screen flex flex-col justify-center text-2xl pt-20 pb-20 gap-10 accent-bg-color text-black z-20"
+          class="flex -rotate-90 gap-10 text-xl -translate-x-[620px] desktop-nav-menu bg-[yellow] rounded-lg w-[80rem] h-[3rem] justify-center items-center"
         >
-          <li
-            class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10 hover:translate-x-3 z-20"
-          >
-            <a
-              class="link-glitch"
-              data-text="William Alderman"
-              href="#home-section"
-            >
-              William Alderman</a
-            >
+        <li
+        class=""
+      >
+        <a class="desktop-nav-anchor " data-text="Contact" href="#contact-section"
+          >Contact</a
+        >
           </li>
           <div
-            class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10"
+            class="text-slate-900"
           >
             |
           </div>
           <li
-            class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10 hover:translate-x-3 z-20"
+            class="desktop-nav-list"
           >
-            <a
-              class="link-glitch"
-              data-text="Projects"
-              href="#projects-section"
-            >
-              Projects</a
-            >
-          </li>
-          <div
-            class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10"
-          >
-            |
-          </div>
-          <li
-            class="-rotate-90 whitespace-nowrap flex justify-start items-start w-10 hover:translate-x-3 z-20"
-          >
-            <a class="link-glitch" data-text="About" href="#about-section">
+            <a class="desktop-nav-anchor" data-text="About" href="#about-section">
               About</a
             >
           </li>
           <div
-            class="-rotate-90 whitespace-nowrap flex justify-center items-start w-10"
+          class="text-slate-900"
           >
             |
           </div>
           <li
-            class="-rotate-90 whitespace-nowrap flex justify-end items-start w-10 hover:translate-x-3 z-20"
+          class=""
+        >
+          <a
+            class="desktop-nav-anchor"
+            data-text="Projects"
+            href="#projects-section"
           >
-            <a class="link-glitch" data-text="Contact" href="#contact-section"
-              >Contact</a
-            >
-          </li>
+            Projects</a
+          >
+        </li>
+          <div
+          class="text-slate-900"
+          >
+            |
+          </div>
+
+          <li
+          class="desktop-nav-list"
+        >
+          <a
+            class="whitespace-nowrap desktop-nav-anchor"
+            data-text="William Alderman"
+            href="#home-section"
+          >
+            William Alderman</a
+          >
+        </li>
+
         </menu>
         <svg
           class="rotate-90 fixed -left-[1160px] top-[500px] -translate-x-[-256px] z-10"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
           width="1920px"
           height="40px"
         >
@@ -82,6 +87,10 @@
         </svg>
       </div>
     </nav>
+
+<!-- ——————————————————————————————————————————————————
+Mobile Nav
+—————————————————————————————————————————————————— -->
 
     <div class="device w-screen h-screen hidden max-tablet:block">
       <div class="container">
@@ -131,6 +140,10 @@
       </div>
     </div>
 
+<!-- ——————————————————————————————————————————————————
+Home Page
+—————————————————————————————————————————————————— -->
+
     <div
       id="home-section"
       class="h-screen flex justify-center items-center max-tablet:ml-0 max-tablet:mr-0 max-tablet:min-h-screen max-w-full max-tablet:-translate-y-20"
@@ -174,6 +187,10 @@
         </menu>
       </div>
     </div>
+
+<!-- ——————————————————————————————————————————————————
+Projects Page
+—————————————————————————————————————————————————— -->
 
     <div
       id="projects-section"
@@ -271,6 +288,10 @@
       </ul>
     </div>
 
+<!-- ——————————————————————————————————————————————————
+About Page
+—————————————————————————————————————————————————— -->    
+
     <div
       id="about-section"
       class="min-h-screen h-fit flex flex-col items-center max-tablet:min-h-screen max-tablet:ml-0 max-tablet:mr-0 max-desktop:overflow-visible w-full max-tablet:m-0 max-w-screen-desktop"
@@ -309,7 +330,10 @@
             then I've expanded my skillset through professional career
             development, university learning, self-teaching, and hobbyist
             pursuits. I like to enjoy the best of both the technical and natural
-            worlds. I've dabbled in video game development in Unreal and created my
+            worlds. 
+          </p>
+          <p class="indent-5">
+            I've dabbled in video game development in Unreal and created my
             first game a couple years ago. You can often find me tinkering with my personal library
             and games collection. When I need a break from things, backpacking trips and travelling abroad 
             are my favorite ways to enjoy a vacation. Recently, however, I started a small human project. 
@@ -345,6 +369,10 @@
         </div>
       </div>
     </div>
+
+<!-- ——————————————————————————————————————————————————
+Contacts Page
+—————————————————————————————————————————————————— -->    
 
     <div
       id="contact-section"
