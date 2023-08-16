@@ -953,7 +953,7 @@ body {
 .project-2:hover::before,
 .project-4:hover::before {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 @keyframes link-glitch-anim-1 {
