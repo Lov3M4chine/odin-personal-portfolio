@@ -173,6 +173,7 @@ burger.addEventListener("click", function (e) {
   this.classList.toggle("is-open");
   nav.classList.toggle("is-open");
   nav.classList.remove("hidden");
+  toggleScroll();
 });
 
 navLinks.forEach(function (link) {
@@ -183,3 +184,9 @@ navLinks.forEach(function (link) {
     }, 800);
   });
 });
+
+function toggleScroll() {
+  document.body.classList.toggle('no-scroll');
+}
+
+
