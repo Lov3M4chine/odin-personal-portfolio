@@ -203,7 +203,7 @@ body {
 
 .link-glitch {
   position: relative;
-  color: eceff1;
+  color: #eceff1;
   mix-blend-mode: lighten;
 }
 
@@ -235,6 +235,12 @@ body {
 .link-glitch:hover:after {
   text-shadow: -5px 0 #00ffc8;
   animation: link-glitch-anim-2 0.3s infinite ease-in-out alternate-reverse;
+}
+
+.project-2:hover::before,
+.project-4:hover::before {
+  display: flex;
+  justify-content: end;
 }
 
 @keyframes link-glitch-anim-1 {
