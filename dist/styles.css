@@ -509,12 +509,6 @@ video {
 .fixed {
   position: fixed;
 }
-.-inset-3 {
-  inset: -0.75rem;
-}
-.-inset-20 {
-  inset: -5rem;
-}
 .-left-\[1160px\] {
   left: -1160px;
 }
@@ -539,9 +533,6 @@ video {
 .mt-10 {
   margin-top: 2.5rem;
 }
-.mb-24 {
-  margin-bottom: 6rem;
-}
 .flex {
   display: flex;
 }
@@ -560,9 +551,6 @@ video {
 }
 .h-screen {
   height: 100vh;
-}
-.h-1 {
-  height: 0.25rem;
 }
 .min-h-fit {
   min-height: -moz-fit-content;
@@ -643,9 +631,6 @@ video {
 .justify-between {
   justify-content: space-between;
 }
-.justify-stretch {
-  justify-content: stretch;
-}
 .gap-10 {
   gap: 2.5rem;
 }
@@ -657,9 +642,6 @@ video {
 }
 .gap-40 {
   gap: 10rem;
-}
-.self-stretch {
-  align-self: stretch;
 }
 .overflow-x-hidden {
   overflow-x: hidden;
@@ -1134,7 +1116,7 @@ Text Typing Effect
 }
 
 .blinking-wrapper h1 {
-  width: 14ch;
+  width: 15ch;
   border-right: 4px solid rgb(180, 171, 171);
   white-space: nowrap;
   overflow: hidden;
@@ -1420,11 +1402,6 @@ Desktop Navigation Glitch Effect
 
   .max-tablet\:hidden {
     display: none;
-  }
-
-  .max-tablet\:max-h-fit {
-    max-height: -moz-fit-content;
-    max-height: fit-content;
   }
 
   .max-tablet\:min-h-screen {

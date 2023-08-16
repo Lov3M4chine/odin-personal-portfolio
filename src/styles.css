@@ -393,7 +393,7 @@ Text Typing Effect
 }
 
 .blinking-wrapper h1 {
-  width: 14ch;
+  width: 15ch;
   border-right: 4px solid rgb(180, 171, 171);
   white-space: nowrap;
   overflow: hidden;
