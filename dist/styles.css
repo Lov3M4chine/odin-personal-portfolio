@@ -571,6 +571,13 @@ video {
 .w-screen {
   width: 100vw;
 }
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.w-40 {
+  width: 10rem;
+}
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
