@@ -8,7 +8,7 @@
     <script src="./index.js"></script>
   </head>
   <body
-    class="font-Play background-color primary-text-color max-tablet:m-0 max-tablet:p-0 max-tablet:flex max-tablet:flex-col max-tablet:justify-center w-screen min-w-fit"
+    class="font-Play background-color primary-text-color max-tablet:m-0 max-tablet:p-0 max-tablet:flex max-tablet:flex-col max-tablet:justify-between w-screen min-w-fit"
   >
 
 <!-- ——————————————————————————————————————————————————
@@ -98,7 +98,7 @@ Mobile Nav
           <span class="burger"></span>
           <span class="burger-text">Menu</span>
         </button>
-        <nav class="main-nav" id="main-nav">
+        <nav class="main-nav hidden" id="main-nav">
           <ul>
             <li>
               <a
@@ -169,7 +169,7 @@ Home Page
         <menu
           class="w-1/2 text-9xl font-Handjet font-normal accent-text-color max-tablet:text-6xl max-tablet:-translate-x-7"
         >
-          <li class="hover:font-extralight max-tablet:p-3">
+          <li class="hover:font-extralight max-tablet:p-3 ">
             <a class="link-glitch" data-text="Projects" href="#projects-section"
               >Projects</a
             >
@@ -372,11 +372,11 @@ Contacts Page
 
     <div
       id="contact-section"
-      class="h-screen min-h-fit flex flex-col items-center max-tablet:min-h-screen max-tablet:m-0 max-tablet:mt-32 max-tablet:border-2 max-tablet:border-[#e8f4f8] w-full z-[5]"
+      class="h-screen min-h-fit flex flex-col items-center max-tablet:min-h-screen max-tablet:m-0 max-tablet:mt-32 max-tablet:border-2 max-tablet:border-[#e8f4f8] w-full z-[5] gap-10 flex-grow "
     >
       <h2 class="font-Handjet font-normal max-tablet:text-5xl">Contact</h2>
       <div
-        class="flex flex-wrap justify-between items-center max-tablet:flex-col max-tablet:justify-center max-tablet:items-start max-tablet:w-full"
+        class="flex flex-wrap justify-center items-center max-tablet:flex-col max-tablet:justify-center max-tablet:items-start max-tablet:w-full gap-40 max-tablet:gap-10"
       >
         <address
           class="p-6 text-4xl max-tablet:text-xl max-tablet:whitespace-nowrap max-tablet:flex max-tablet:flex-col"
@@ -402,7 +402,7 @@ Contacts Page
           class="max-tablet:flex max-tablet:w-full max-tablet:justify-center"
         >
           <div
-            class="flex justify-center items-center gap-10 p-6 max-tablet:w-64 max-tablet:"
+            class="flex max-tablet:flex-col justify-center items-center gap-20 p-6 max-tablet:w-64"
           >
           <a href="https://github.com/Lov3M4chine" target="_blank" rel="noopener noreferrer" title="Link to Github">
             <svg width="100px" viewBox="0 0 128 128">
@@ -423,7 +423,7 @@ Contacts Page
             </svg>
           </a>
 
-          <a href="https://www.linkedin.com/in/william-alderman-35726099/" target="_blank" rel="noopener noreferrer" title="Link to LinkedIn">
+          <a href="https://www.linkedin.com/in/william-alderman-35726099/" target="_blank" rel="noopener noreferrer" title="Link to LinkedIn" class="linkedin max-tablet:-translate-x-10">
             <svg width="200px" viewBox="0 0 128 128">
               <path
                 fill="yellow"
@@ -447,5 +447,6 @@ Contacts Page
         </div>
       </div>
     </div>
+    <div class="flex justify-center p-3"> &copy; 2023 William Alderman</div>
   </body>
 </html>

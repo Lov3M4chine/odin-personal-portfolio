@@ -172,12 +172,14 @@ let navLinks = document.querySelectorAll(".nav-link");
 burger.addEventListener("click", function (e) {
   this.classList.toggle("is-open");
   nav.classList.toggle("is-open");
+  nav.classList.remove("hidden");
 });
 
 navLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     setTimeout(function () {
       burger.click();
+      nav.classList.add("hidden");
     }, 800);
   });
 });
