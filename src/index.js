@@ -236,6 +236,7 @@ homeLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
     window.location.hash = 'home';
+    window.location.reload();
   });
 });
 
@@ -243,6 +244,7 @@ projectsLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
     window.location.hash = 'projects';
+    window.location.reload();
   });
 });
 
@@ -250,6 +252,7 @@ aboutLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
     window.location.hash = 'about';
+    window.location.reload();
   });
 });
 
@@ -257,8 +260,10 @@ contactLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
     window.location.hash = 'contact';
+    window.location.reload();
   });
 });
+
 
 // ——————————————————————————————————————————————————
 // Scanline Event Listener
