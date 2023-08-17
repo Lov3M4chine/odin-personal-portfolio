@@ -76,6 +76,10 @@ html {
   width: 200px; 
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 
 
 /* ——————————————————————————————————————————————————
@@ -346,14 +350,14 @@ h2:after {
 
 h2:before {
   animation: headerGlitchTop 1s linear infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }
 
 h2:after {
   animation: headerGlitchBottom 1.5s linear infinite;
-  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
 
 @keyframes headerGlitchTop {
