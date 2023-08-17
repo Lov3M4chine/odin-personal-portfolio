@@ -204,37 +204,77 @@ let aboutSection = document.getElementById("about-section");
 let contactSection = document.getElementById("contact-section");
 
 homeLink.forEach(function (link) {
-  link.addEventListener("click", function () {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
     homeSection.classList.remove('hidden');
     projectSection.classList.add('hidden');
     aboutSection.classList.add('hidden');
     contactSection.classList.add('hidden');
+    window.history.pushState({ section: 'home' }, '', '/home');
   });
 });
 
 projectsLink.forEach(function (link) {
-  link.addEventListener("click", function () {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
     projectSection.classList.remove('hidden');
     homeSection.classList.add('hidden');
     aboutSection.classList.add('hidden');
     contactSection.classList.add('hidden');
+    window.history.pushState({ section: 'projects' }, '', '/projects');
   });
 });
 
 aboutLink.forEach(function (link) {
-  link.addEventListener("click", function () {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
     aboutSection.classList.remove('hidden');
     projectSection.classList.add('hidden');
     homeSection.classList.add('hidden');
     contactSection.classList.add('hidden');
+    window.history.pushState({ section: 'about' }, '', '/about');
   });
 });
 
 contactLink.forEach(function (link) {
-  link.addEventListener("click", function () {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
     contactSection.classList.remove('hidden');
     aboutSection.classList.add('hidden');
     projectSection.classList.add('hidden');
     homeSection.classList.add('hidden');
+    window.history.pushState({ section: 'contact' }, '', '/contact');
   });
 });
+
+window.addEventListener('popstate', function(event) {
+  homeSection.classList.add('hidden');
+  projectSection.classList.add('hidden');
+  aboutSection.classList.add('hidden');
+  contactSection.classList.add('hidden');
+  
+  if (event.state && event.state.section) {
+    document.getElementById(event.state.section + '-section').classList.remove('hidden');
+  } else {
+    homeSection.classList.remove('hidden');
+  }
+});
+
+function navigate(path) {
+  homeSection.classList.add('hidden');
+  projectSection.classList.add('hidden');
+  aboutSection.classList.add('hidden');
+  contactSection.classList.add('hidden');
+  
+  const section = document.getElementById(path.substring(1) + '-section');
+
+  if (section) {
+    section.classList.remove('hidden');
+  } else {
+    homeSection.classList.remove('hidden');
+  }
+}
+
+navigate(window.location.pathname);
+
+
