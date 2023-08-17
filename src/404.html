@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body
+    class="font-Play background-color primary-text-color max-tablet:m-0 max-tablet:p-0 max-tablet:flex max-tablet:flex-col flex flex-col justify-center items-center"
+  >
+
+  <!-- <img src="./imgs/victor-rodriguez-UrfpprfDB0k-unsplash.jpg" alt="" class="bg-cover fixed top-0 left-0 h-screen -z-10"> -->
+
+<!-- ——————————————————————————————————————————————————
+Desktop Nav
+—————————————————————————————————————————————————— -->
+
+    <nav id="nav" class="fixed max-tablet:hidden top-0 z-50">
+      <div class="flex flex-col items-center">
+        <menu
+          class="bg-[yellow] flex w-full justify-between pl-10 pr-10"
+        >
+
+        <li
+        class="desktop-nav-list"
+      >
+        <a
+          class="whitespace-nowrap desktop-nav-anchor home-link"
+          data-text="William Alderman"
+
+        >
+          William Alderman</a
+        >
+      </li>
+
+      <div
+      class="text-slate-900"
+    >
+      |
+    </div>
+
+      <li
+          class=""
+        >
+          <a
+            class="desktop-nav-anchor projects-link"
+            data-text="Projects"
+
+          >
+            Projects</a
+          >
+        </li>
+
+        <div
+        class="text-slate-900"
+        >
+          |
+        </div>
+
+        <li
+            class="desktop-nav-list about-link"
+          >
+            <a class="desktop-nav-anchor" data-text="About"
+              >About</a
+            >
+          </li>
+
+          <div
+          class="text-slate-900"
+          >
+            |
+          </div>
+
+        <li
+        class=""
+      >
+        <a class="desktop-nav-anchor contact-link" data-text="Contact"
+          >Contact</a
+        >
+          </li>
+
+        </menu>
+        <svg
+          class="rotate-180 w-screen max-w-[1920px] -translate-y-1"
+          height="40px"
+        >
+          <path
+            fill-rule="evenodd"
+            fill="yellow"
+            d="M1827.156,15.021 L1827.129,14.994 L1833.785,14.994 L1833.759,15.021 L1827.156,15.021 ZM1824.965,24.036 L1835.969,24.036 L1830.461,18.558 L1833.759,15.021 L1920.000,15.021 L1920.000,39.075 L0.001,39.075 L0.001,15.013 L271.884,15.013 L279.537,6.930 L292.458,6.930 L308.426,24.036 L308.449,24.013 L308.467,24.036 L317.638,15.021 L463.241,15.021 L466.539,18.558 L461.031,24.036 L472.035,24.036 L466.539,18.558 L469.844,15.021 L551.557,15.021 L556.251,10.578 L565.497,1.358 L571.663,7.066 L602.910,7.055 L607.919,7.055 L620.578,19.983 L654.209,19.983 L661.448,12.957 L735.709,12.995 L741.480,18.554 L750.129,9.930 L753.020,12.995 L918.181,12.957 L930.942,0.066 L954.993,24.036 L955.000,24.024 L955.012,24.036 L964.064,15.013 L967.906,15.013 L970.005,17.106 L966.670,20.419 L973.326,20.419 L970.005,17.106 L972.067,15.055 L1050.000,15.023 L1050.000,15.013 L1064.030,15.017 L1072.000,15.013 L1072.000,15.019 L1225.933,15.055 L1227.994,17.106 L1224.674,20.419 L1231.331,20.419 L1227.994,17.106 L1230.094,15.013 L1233.936,15.013 L1242.989,24.036 L1243.000,24.024 L1243.007,24.036 L1267.058,0.066 L1279.819,12.957 L1368.980,12.995 L1371.871,9.930 L1380.520,18.554 L1386.290,13.057 L1635.552,13.019 L1642.790,19.983 L1676.422,19.983 L1689.080,6.992 L1725.337,7.003 L1731.502,1.358 L1740.749,10.578 L1745.443,15.021 L1827.156,15.021 L1830.461,18.558 L1824.965,24.036 ZM341.624,18.857 L339.889,18.857 L339.889,24.036 L341.624,24.036 L341.624,18.857 ZM344.248,18.857 L342.518,18.857 L342.518,24.036 L344.248,24.036 L344.248,18.857 ZM356.370,18.857 L354.640,18.857 L354.640,24.036 L356.370,24.036 L356.370,18.857 ZM377.168,18.857 L371.973,18.857 L371.973,24.036 L377.168,24.036 L377.168,18.857 ZM584.675,12.348 L582.941,12.348 L582.941,14.073 L584.675,14.073 L584.675,12.348 ZM591.316,12.348 L589.582,12.348 L589.582,17.526 L591.316,17.526 L591.316,12.348 ZM604.751,12.348 L603.017,12.348 L603.017,14.073 L604.751,14.073 L604.751,12.348 ZM604.751,15.802 L603.017,15.802 L603.017,17.526 L604.751,17.526 L604.751,15.802 ZM1693.983,12.348 L1692.249,12.348 L1692.249,14.073 L1693.983,14.073 L1693.983,12.348 ZM1693.983,15.802 L1692.249,15.802 L1692.249,17.526 L1693.983,17.526 L1693.983,15.802 ZM1707.418,12.348 L1705.683,12.348 L1705.683,17.526 L1707.418,17.526 L1707.418,12.348 ZM1714.059,12.348 L1712.324,12.348 L1712.324,14.073 L1714.059,14.073 L1714.059,12.348 ZM463.214,14.994 L469.871,14.994 L469.844,15.021 L463.241,15.021 L463.214,14.994 ZM754.222,5.976 L750.129,9.930 L746.025,5.976 L754.222,5.976 ZM1375.975,5.976 L1371.871,9.930 L1367.778,5.976 L1375.975,5.976 Z"
+          />
+        </svg>
+      </div>
+    </nav>
+
+<!-- ——————————————————————————————————————————————————
+Mobile Nav
+—————————————————————————————————————————————————— -->
+
+    <div class="device hidden max-tablet:block">
+      <div class="container">
+        <button id="burger" class="open-main-nav" type="button">
+          <span class="burger"></span>
+          <span class="burger-text">Menu</span>
+        </button>
+        <nav class="main-nav hidden" id="main-nav">
+          <ul>
+            <li>
+              <a
+                class="link-glitch nav-link home-link"
+                data-text="William Alderman"
+                >
+                William Alderman</a
+              >
+            </li>
+            <li>
+              <a
+                class="link-glitch nav-link projects-link"
+                data-text="Projects"
+        
+              >
+                Projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="link-glitch nav-link about-link"
+                data-text="About"
+      
+              >
+                About</a
+              >
+            </li>
+            <li>
+              <a
+                class="link-glitch nav-link contact-link"
+                data-text="Contact"
+
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+<!-- ——————————————————————————————————————————————————
+Home Page
+—————————————————————————————————————————————————— -->
+
+    <div
+      id="home-section"
+      class="h-screen flex justify-center items-center max-tablet:ml-0 max-tablet:mr-0 max-tablet:min-h-screen max-w-full max-tablet:-translate-y-20 max-tablet:bg-[url('./imgs/victor-rodriguez-UrfpprfDB0k-unsplash.jpg')] max-tablet:bg-cover"
+    >
+      <div
+        class="main-home-content flex items-end gap-20 max-tablet:flex-col max-tablet:items-center max-tablet:gap-8"
+      >
+        <div
+          id="one-liner-intro"
+          class="flex flex-col w-1/2 gap-4 pr-10 max-tablet:w-fit max-tablet:ml-16"
+        >
+          <div class="typing-wrapper blinking-wrapper max-tablet:text-sm max-tablet:hidden">
+            <h1 class="typing text-5xl max-tablet:text-3xl max-tablet:font-Wallpoet">
+              William Alderman
+            </h1>
+          </div>
+          <h1 class="text-3xl font-Wallpoet hidden max-tablet:block max-tablet:mt-20">
+            <span>W</span>
+            <span>i</span>
+            <span>l</span>
+            <span>l</span>
+            <span>i</span>
+            <span>a</span>
+            <span>m</span>
+            <br />
+            <span>A</span>
+            <span>l</span>
+            <span>d</span>
+            <span>e</span>
+            <span>r</span>
+            <span>m</span>
+            <span>a</span>
+            <span>n</span>
+          </h1>
+          <p
+            class="border-t-2 border-[#e8f4f8] p-3 text-2xl max-tablet:text-lg max-tablet:p-0"
+          >
+            Full stack engineer and relentless problem solver.
+          </p>
+        </div>
+        <menu
+          class="w-1/2 text-9xl font-Handjet font-normal accent-text-color max-tablet:text-6xl max-tablet:-translate-x-7"
+        >
+          <li class="hover:font-extralight max-tablet:p-3 cursor-pointer">
+            <a class="link-glitch projects-link" data-text="Projects" 
+              >Projects</a
+            >
+          </li>
+          <li class="hover:font-extralight max-tablet:p-3 cursor-pointer">
+            <a class="link-glitch about-link" data-text="About" 
+              >About</a
+            >
+          </li>
+          <li class="hover:font-extralight max-tablet:p-3 cursor-pointer">
+            <a class="link-glitch contact-link" data-text="Contacts" 
+              >Contact</a
+            >
+          </li>
+        </menu>
+      </div>
+    </div>
+
+<!-- ——————————————————————————————————————————————————
+Projects Page
+—————————————————————————————————————————————————— -->
+
+    <div
+      id="projects-section"
+      class="min-h-screen h-fit flex flex-col items-center max-tablet:min-h-screen w-full max-tablet:m-0 overflow-x-hidden max-tablet:w-screen mt-20 hidden"
+    >
+      <h2
+        title="Selected Projects"
+        class="font-Handjet font-normal max-tablet:text-5xl"
+      >
+        Selected Projects
+      </h2>
+      <ul
+        class="flex flex-col items-center text-5xl gap-10 mt-10 mb-10 max-tablet:w-screen max-tablet:max-w-[500px]"
+      >
+        <li
+          class="flex gap-20 items-center justify-between remove-sepia-on-hover slide-in-left max-tablet:flex-col max-tablet:gap-3 w-full max-tablet:place-items-start pl-10"
+        >
+          <div>
+            <a
+              class="link-glitch accent-text-color max-tablet:flex max-tablet:text-3xl w-fit cursor-pointer"
+              data-text="Project 1"
+              >Project 1</a
+            >
+            <p class="text-lg max-tablet:text-sm">
+              Description of skill developed
+            </p>
+          </div>
+          <img
+            class="w-96 h-auto sepia max-tablet:w-60 max-tablet:sepia-0 cursor-pointer"
+            src="./imgs/placeholder.jpg"
+            alt=""
+          />
+        </li>
+        <li
+          class="flex gap-20 items-center justify-between remove-sepia-on-hover slide-in-right max-tablet:flex-col max-tablet:gap-3 w-full max-tablet:place-items-end pr-10"
+        >
+          <img
+            class="w-96 h-auto sepia hover:sepia-0 max-tablet:w-60 max-tablet:sepia-0 max-tablet:order-2 cursor-pointer"
+            src="./imgs/placeholder.jpg"
+            alt=""
+          />
+          <div class="max-tablet:order-1">
+            <a
+              class="link-glitch project-2 accent-text-color max-tablet:flex max-tablet:justify-end max-tablet:text-3xl w-fit max-tablet:ml-auto cursor-pointer"
+              data-text="Project 2"
+              >Project 2</a
+            >
+            <p class="text-lg max-tablet:text-sm">
+              Description of skill developed
+            </p>
+          </div>
+        </li>
+        <li
+          class="flex gap-20 items-center justify-between remove-sepia-on-hover slide-in-left max-tablet:flex-col max-tablet:gap-3 w-full max-tablet:place-items-start pl-10"
+        >
+          <div>
+            <a
+              class="link-glitch accent-text-color max-tablet:flex max-tablet:text-3xl w-fit cursor-pointer"
+              data-text="Project 3"
+              >Project 3</a
+            >
+            <p class="text-lg max-tablet:text-sm">
+              Description of skill developed
+            </p>
+          </div>
+          <img
+            class="w-96 h-auto sepia hover:sepia-0 max-tablet:w-60 max-tablet:sepia-0 cursor-pointer"
+            src="./imgs/placeholder.jpg"
+            alt=""
+          />
+        </li>
+        <li
+          class="flex gap-20 items-center justify-between remove-sepia-on-hover slide-in-right max-tablet:flex-col max-tablet:gap-3 w-full max-tablet:place-items-end pr-10"
+        >
+          <img
+            class="w-96 h-auto sepia hover:sepia-0 max-tablet:w-60 max-tablet:sepia-0 max-tablet:order-2 cursor-pointer"
+            src="./imgs/placeholder.jpg"
+            alt=""
+          />
+          <div class="max-tablet:order-1">
+            <a
+              class="link-glitch project-4 accent-text-color max-tablet:flex max-tablet:justify-end max-tablet:text-3xl w-fit max-tablet:ml-auto cursor-pointer"
+              data-text="Project 4"
+              >Project 4</a
+            >
+            <p class="text-lg max-tablet:text-sm">
+              Description of skill developed
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+<!-- ——————————————————————————————————————————————————
+About Page
+—————————————————————————————————————————————————— -->    
+
+    <div
+      id="about-section"
+      class="flex flex-col items-center min-h-screen max-tablet:min-h-screen max-tablet:ml-0 max-tablet:mr-0 max-desktop:overflow-visible max-tablet:overflow-hidden w-full max-tablet:m-0 max-w-screen-desktop mt-20 hidden"
+    >
+      <h2 title="About Me" class="font-Handjet font-normal max-tablet:text-5xl">
+        About Me
+      </h2>
+      <div
+        class="flex flex-wrap justify-center w-full"
+      >
+        <div
+          class="max-w-2xl flex flex-col gap-5 p-5"
+        >
+          <p class="indent-5">
+            Hello and thank you for visiting my site. My name is William
+            Alderman, a self-taught full-stack software engineer who is actively
+            seeking opportunities to expand my skillset. I have extensive
+            experience in professional work environments and team collaboration.
+          </p>
+          <p class="indent-5">
+            With the help of the Odin Project, an open source world-class coding
+            curriculum, I left the comforts of my previous career in finance
+            (broker-dealer) to jump into the computer science industry. I made
+            the jump because I love coding and solving complex problems. A passion 
+            and competence for it was discovered after my undergraduate degree
+            at Arizona State University.
+          </p>
+          <p class="indent-5">
+            I am proficient in Command Line Interface, Git, Github, HTML, CSS,
+            Chrome Dev Tools, Javascript, React, NodeJS, and C++ (from the game
+            development side of things).
+          </p>
+          <p class="indent-5">
+            At the early age of six I began building computers and programming
+            as a hobby with my dad, a Microprocessor Technician at Intel. Since
+            then I've expanded my skillset through professional career
+            development, university learning, self-teaching, and hobbyist
+            pursuits. I like to enjoy the best of both the technical and natural
+            worlds. 
+          </p>
+          <p class="indent-5">
+            I've dabbled in video game development in Unreal and created my
+            first game a couple years ago. You can often find me tinkering with my personal library
+            and games collection. When I need a break from things, backpacking trips and travelling abroad 
+            are my favorite ways to enjoy a vacation. Recently, however, I started a small human project. 
+            Now I'm mastering the art of managing messes, moods, and milestones.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center"
+        >
+          <div class="gallery p-10 max-tablet:order-3">
+            <img
+            class="h-auto w-auto"
+            src="./imgs/personal-photo.jpg"
+            alt=""
+          />
+          <img
+            class="h-auto w-auto"
+            src="./imgs/personal-photo3.jpg"
+            alt=""
+          />
+          <img
+            class="h-auto w-auto"
+            src="./imgs/professional-photo.png"
+            alt=""
+          />
+          <img
+            class="h-auto w-auto"
+            src="./imgs/professional-photo2.jpg"
+            alt=""
+          />
+          </div>
+          <p class="scramble text-3xl max-tablet:text-2xl pt-20 max-tablet:order-2"></p>
+        </div>
+      </div>
+    </div>
+
+<!-- ——————————————————————————————————————————————————
+Contacts Page
+—————————————————————————————————————————————————— -->    
+
+    <div
+      id="contact-section"
+      class="h-screen min-h-fit flex flex-col items-center max-tablet:min-h-screen max-tablet:m-0 max-tablet:border-2 max-tablet:border-[#e8f4f8] w-full z-[5] gap-10 flex-grow max-w-[560px] max-h-fit mt-20 hidden"
+    >
+      <h2 class="font-Handjet font-normal max-tablet:text-5xl">Contact</h2>
+      <div
+        class="flex flex-wrap w-3/4 justify-center items-center max-tablet:flex-col max-tablet:justify-center max-tablet:items-start max-tablet:w-full gap-20 max-tablet:gap-10"
+      >
+        <address
+          class="p-6 text-4xl max-tablet:text-xl max-tablet:whitespace-nowrap max-tablet:flex max-tablet:flex-col whitespace-nowrap"
+        >
+          Phone:
+          <a
+            class="link-glitch accent-text-color"
+            data-text="(480) 688-4307"
+            href="tel:+14806884307"
+            >(480) 688-4307</a
+          >
+          <br /><br>
+          Email:
+          <a
+            class="link-glitch accent-text-color"
+            data-text="william-alderman@outlook.com"
+            href="mailto:william-alderman@outlook.com"
+            >william-alderman@outlook.com</a
+          >
+          <br />
+        </address>
+        <div
+          class="max-tablet:flex max-tablet:w-full max-tablet:justify-center"
+        >
+          <div
+            class="flex max-tablet:flex-col justify-center items-center gap-20 p-6 max-tablet:w-64 mr-40 max-tablet:mr-0"
+          >
+          <a href="https://github.com/Lov3M4chine" target="_blank" rel="noopener noreferrer" title="Link to Github">
+            <svg width="100px" viewBox="0 0 128 128">
+              <g fill="yellow">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M64 1.512c-23.493 0-42.545 19.047-42.545 42.545 0 18.797 12.19 34.745 29.095 40.37 2.126.394 2.907-.923 2.907-2.047 0-1.014-.04-4.366-.058-7.92-11.837 2.573-14.334-5.02-14.334-5.02-1.935-4.918-4.724-6.226-4.724-6.226-3.86-2.64.29-2.586.29-2.586 4.273.3 6.523 4.385 6.523 4.385 3.794 6.504 9.953 4.623 12.38 3.536.383-2.75 1.485-4.628 2.702-5.69-9.45-1.075-19.384-4.724-19.384-21.026 0-4.645 1.662-8.44 4.384-11.42-.442-1.072-1.898-5.4.412-11.26 0 0 3.572-1.142 11.7 4.363 3.395-.943 7.035-1.416 10.65-1.432 3.616.017 7.258.49 10.658 1.432 8.12-5.504 11.688-4.362 11.688-4.362 2.316 5.86.86 10.187.418 11.26 2.728 2.978 4.378 6.774 4.378 11.42 0 16.34-9.953 19.938-19.427 20.99 1.526 1.32 2.886 3.91 2.886 7.88 0 5.692-.048 10.273-.048 11.674 0 1.13.766 2.458 2.922 2.04 16.896-5.632 29.07-21.574 29.07-40.365C106.545 20.56 87.497 1.512 64 1.512z"
+                ></path>
+                <path
+                  d="M37.57 62.596c-.095.212-.428.275-.73.13-.31-.14-.482-.427-.382-.64.09-.216.424-.277.733-.132.31.14.486.43.38.642zM39.293 64.52c-.203.187-.6.1-.87-.198-.278-.297-.33-.694-.124-.884.208-.188.593-.1.87.197.28.3.335.693.123.884zm1.677 2.448c-.26.182-.687.012-.95-.367-.262-.377-.262-.83.005-1.013.264-.182.684-.018.95.357.262.385.262.84-.005 1.024zm2.298 2.368c-.233.257-.73.188-1.093-.163-.372-.343-.475-.83-.242-1.087.237-.257.736-.185 1.102.163.37.342.482.83.233 1.086zm3.172 1.374c-.104.334-.582.485-1.064.344-.482-.146-.796-.536-.7-.872.1-.336.582-.493 1.067-.342.48.144.795.53.696.87zm3.48.255c.013.35-.396.642-.902.648-.508.012-.92-.272-.926-.618 0-.354.4-.642.908-.65.506-.01.92.272.92.62zm3.24-.551c.06.342-.29.694-.793.787-.494.092-.95-.12-1.014-.46-.06-.35.297-.7.79-.792.503-.088.953.118 1.017.466zm0 0"
+                ></path>
+              </g>
+              <path
+                d="M24.855 108.302h-10.7a.5.5 0 00-.5.5v5.232a.5.5 0 00.5.5h4.173v6.5s-.937.32-3.53.32c-3.056 0-7.327-1.116-7.327-10.508 0-9.393 4.448-10.63 8.624-10.63 3.614 0 5.17.636 6.162.943.31.094.6-.216.6-.492l1.193-5.055a.468.468 0 00-.192-.39c-.403-.288-2.857-1.66-9.058-1.66-7.144 0-14.472 3.038-14.472 17.65 0 14.61 8.39 16.787 15.46 16.787 5.854 0 9.405-2.502 9.405-2.502.146-.08.162-.285.162-.38v-16.316a.5.5 0 00-.5-.5zM79.506 94.81H73.48a.5.5 0 00-.498.503l.002 11.644h-9.392V95.313a.5.5 0 00-.497-.503H57.07a.5.5 0 00-.498.503v31.53c0 .277.224.503.498.503h6.025a.5.5 0 00.497-.504v-13.486h9.392l-.016 13.486c0 .278.224.504.5.504h6.038a.5.5 0 00.497-.504v-31.53a.497.497 0 00-.497-.502zm-47.166.717c-2.144 0-3.884 1.753-3.884 3.923 0 2.167 1.74 3.925 3.884 3.925 2.146 0 3.885-1.758 3.885-3.925 0-2.17-1.74-3.923-3.885-3.923zm2.956 9.608H29.29c-.276 0-.522.284-.522.56v20.852c0 .613.382.795.876.795h5.41c.595 0 .74-.292.74-.805v-20.899a.5.5 0 00-.498-.502zm67.606.047h-5.98a.5.5 0 00-.496.504v15.46s-1.52 1.11-3.675 1.11-2.727-.977-2.727-3.088v-13.482a.5.5 0 00-.497-.504h-6.068a.502.502 0 00-.498.504v14.502c0 6.27 3.495 7.804 8.302 7.804 3.944 0 7.124-2.18 7.124-2.18s.15 1.15.22 1.285c.07.136.247.273.44.273l3.86-.017a.502.502 0 00.5-.504l-.003-21.166a.504.504 0 00-.5-.502zm16.342-.708c-3.396 0-5.706 1.515-5.706 1.515V95.312a.5.5 0 00-.497-.503H107a.5.5 0 00-.5.503v31.53a.5.5 0 00.5.503h4.192c.19 0 .332-.097.437-.268.103-.17.254-1.454.254-1.454s2.47 2.34 7.148 2.34c5.49 0 8.64-2.784 8.64-12.502s-5.03-10.988-8.428-10.988zm-2.36 17.764c-2.073-.063-3.48-1.004-3.48-1.004v-9.985s1.388-.85 3.09-1.004c2.153-.193 4.228.458 4.228 5.594 0 5.417-.935 6.486-3.837 6.398zm-63.689-.118c-.263 0-.937.107-1.63.107-2.22 0-2.973-1.032-2.973-2.368v-8.866h4.52a.5.5 0 00.5-.504v-4.856a.5.5 0 00-.5-.502h-4.52l-.007-5.97c0-.227-.116-.34-.378-.34h-6.16c-.238 0-.367.106-.367.335v6.17s-3.087.745-3.295.805a.5.5 0 00-.36.48v3.877a.5.5 0 00.497.503h3.158v9.328c0 6.93 4.86 7.61 8.14 7.61 1.497 0 3.29-.48 3.586-.59.18-.067.283-.252.283-.453l.004-4.265a.51.51 0 00-.5-.502z"
+                fill="yellow"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/william-alderman-35726099/" target="_blank" rel="noopener noreferrer" title="Link to LinkedIn" class="linkedin max-tablet:-translate-x-10">
+            <svg width="200px" viewBox="0 0 128 128">
+              <path
+                fill="yellow"
+                d="M.85 52.73h4.94v17.98h9.14v4.56H.85V52.73zM17.11 60h4.74v15.26h-4.74zm2.37-7.59a2.75 2.75 0 11-2.75 2.75 2.75 2.75 0 012.75-2.75M41.69 52.73h4.74V66.2l5.38-6.22h5.81l-6.22 7.07 6.09 8.22h-5.96l-5.04-7.55h-.06v7.55h-4.74V52.73zM24.48 60H29v2.09h.06a5 5 0 014.49-2.47c4.81 0 5.69 3.16 5.69 7.27v8.38h-4.7v-7.43c0-1.77 0-4-2.47-4s-2.85 1.93-2.85 3.92v7.55h-4.74z"
+              ></path>
+              <path
+                fill="yellow"
+                d="M67.61 65.85a2.84 2.84 0 00-2.91-2.91 3.16 3.16 0 00-3.35 2.91zm4 6.77a8.35 8.35 0 01-6.48 3c-4.74 0-8.54-3.16-8.54-8.07s3.8-8.06 8.54-8.06c4.43 0 7.21 3.16 7.21 8.06v1.49h-11a3.54 3.54 0 003.57 3 4 4 0 003.38-1.87zM82.23 63.68A3.89 3.89 0 1086 67.57a3.6 3.6 0 00-3.8-3.89m8.2 11.58H86v-2a6 6 0 01-4.71 2.4c-4.56 0-7.56-3.29-7.56-7.94 0-4.27 2.66-8.19 7-8.19a5.73 5.73 0 014.87 2h.06v-8.8h4.74z"
+              ></path>
+              <path
+                fill="#0076b2"
+                d="M124.78 48H97.51a2.34 2.34 0 00-2.36 2.31v27.38A2.34 2.34 0 0097.51 80h27.27a2.34 2.34 0 002.37-2.31V50.31a2.34 2.34 0 00-2.37-2.31z"
+              ></path>
+              <path
+                fill="#fff"
+                d="M99.89 60h4.75v15.27h-4.75zm2.37-7.59a2.75 2.75 0 11-2.75 2.75 2.75 2.75 0 012.75-2.75M107.61 60h4.55v2.09h.06a5 5 0 014.49-2.47c4.81 0 5.69 3.16 5.69 7.27v8.38h-4.74v-7.43c0-1.77 0-4-2.47-4s-2.85 1.93-2.85 3.92v7.55h-4.74z"
+              ></path>
+            </svg>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center p-5 whitespace-nowrap"> &copy; 2023 William Alderman</div>
+  </body>
+</html>
