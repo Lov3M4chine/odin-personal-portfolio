@@ -521,6 +521,9 @@ video {
 .mt-10 {
   margin-top: 2.5rem;
 }
+.mt-20 {
+  margin-top: 5rem;
+}
 .flex {
   display: flex;
 }
@@ -948,7 +951,6 @@ body {
   min-height: 100vh;
   display: grid;
   place-content: center;
-  background: #cdb380;
   overflow-x: hidden;
 }
 
@@ -1343,7 +1345,7 @@ Desktop Navigation Glitch Effect
 }
 
 /* ——————————————————————————————————————————————————
-Test
+Mobile Name Glow Effect
 —————————————————————————————————————————————————— */
 
 h1 span {
@@ -1467,6 +1469,10 @@ h1 span:nth-child(16){
 
   .max-tablet\:order-2 {
     order: 2;
+  }
+
+  .max-tablet\:order-3 {
+    order: 3;
   }
 
   .max-tablet\:m-0 {

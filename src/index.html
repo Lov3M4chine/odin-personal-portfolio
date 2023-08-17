@@ -27,9 +27,9 @@ Desktop Nav
         class="desktop-nav-list"
       >
         <a
-          class="whitespace-nowrap desktop-nav-anchor"
+          class="whitespace-nowrap desktop-nav-anchor home-link"
           data-text="William Alderman"
-          href="#home-section"
+
         >
           William Alderman</a
         >
@@ -45,9 +45,9 @@ Desktop Nav
           class=""
         >
           <a
-            class="desktop-nav-anchor"
+            class="desktop-nav-anchor projects-link"
             data-text="Projects"
-            href="#projects-section"
+
           >
             Projects</a
           >
@@ -60,10 +60,10 @@ Desktop Nav
         </div>
 
         <li
-            class="desktop-nav-list"
+            class="desktop-nav-list about-link"
           >
-            <a class="desktop-nav-anchor" data-text="About" href="#about-section">
-              About</a
+            <a class="desktop-nav-anchor" data-text="About"
+              >About</a
             >
           </li>
 
@@ -76,18 +76,10 @@ Desktop Nav
         <li
         class=""
       >
-        <a class="desktop-nav-anchor " data-text="Contact" href="#contact-section"
+        <a class="desktop-nav-anchor contact-link" data-text="Contact"
           >Contact</a
         >
           </li>
-
-
-          
-
-          
-
-
-
 
         </menu>
         <svg
@@ -117,34 +109,35 @@ Mobile Nav
           <ul>
             <li>
               <a
-                class="link-glitch nav-link"
-
+                class="link-glitch nav-link home-link"
+                data-text="William Alderman"
+                >
                 William Alderman</a
               >
             </li>
             <li>
               <a
-                class="link-glitch nav-link"
+                class="link-glitch nav-link projects-link"
                 data-text="Projects"
-                href="#projects-section"
+        
               >
                 Projects</a
               >
             </li>
             <li>
               <a
-                class="link-glitch nav-link"
+                class="link-glitch nav-link about-link"
                 data-text="About"
-                href="#about-section"
+      
               >
                 About</a
               >
             </li>
             <li>
               <a
-                class="link-glitch nav-link"
+                class="link-glitch nav-link contact-link"
                 data-text="Contact"
-                href="#contact-section"
+
                 >Contact</a
               >
             </li>
@@ -201,17 +194,17 @@ Home Page
           class="w-1/2 text-9xl font-Handjet font-normal accent-text-color max-tablet:text-6xl max-tablet:-translate-x-7"
         >
           <li class="hover:font-extralight max-tablet:p-3 ">
-            <a class="link-glitch" data-text="Projects" href="#projects-section"
+            <a class="link-glitch projects-link" data-text="Projects" 
               >Projects</a
             >
           </li>
           <li class="hover:font-extralight max-tablet:p-3">
-            <a class="link-glitch" data-text="About" href="#about-section"
+            <a class="link-glitch about-link" data-text="About" 
               >About</a
             >
           </li>
           <li class="hover:font-extralight max-tablet:p-3">
-            <a class="link-glitch" data-text="Contacts" href="#contact-section"
+            <a class="link-glitch contact-link" data-text="Contacts" 
               >Contact</a
             >
           </li>
@@ -225,7 +218,7 @@ Projects Page
 
     <div
       id="projects-section"
-      class="min-h-screen h-fit flex flex-col items-center max-tablet:min-h-screen w-full max-tablet:m-0 overflow-x-hidden max-tablet:w-screen"
+      class="min-h-screen h-fit flex flex-col items-center max-tablet:min-h-screen w-full max-tablet:m-0 overflow-x-hidden max-tablet:w-screen mt-20 hidden"
     >
       <h2
         title="Selected Projects"
@@ -321,7 +314,7 @@ About Page
 
     <div
       id="about-section"
-      class="flex flex-col items-center min-h-screen max-tablet:min-h-screen max-tablet:ml-0 max-tablet:mr-0 max-desktop:overflow-visible max-tablet:overflow-hidden w-full max-tablet:m-0 max-w-screen-desktop "
+      class="flex flex-col items-center min-h-screen max-tablet:min-h-screen max-tablet:ml-0 max-tablet:mr-0 max-desktop:overflow-visible max-tablet:overflow-hidden w-full max-tablet:m-0 max-w-screen-desktop mt-20 hidden"
     >
       <h2 title="About Me" class="font-Handjet font-normal max-tablet:text-5xl">
         About Me
@@ -370,7 +363,7 @@ About Page
         <div
           class="flex flex-col items-center justify-center"
         >
-          <div class="gallery p-10">
+          <div class="gallery p-10 max-tablet:order-3">
             <img
             class="h-auto w-auto"
             src="./imgs/personal-photo.jpg"
@@ -392,7 +385,7 @@ About Page
             alt=""
           />
           </div>
-          <p class="scramble text-3xl max-tablet:text-2xl pt-20"></p>
+          <p class="scramble text-3xl max-tablet:text-2xl pt-20 max-tablet:order-2"></p>
         </div>
       </div>
     </div>
@@ -403,7 +396,7 @@ Contacts Page
 
     <div
       id="contact-section"
-      class="h-screen min-h-fit flex flex-col items-center max-tablet:min-h-screen max-tablet:m-0 max-tablet:mt-32 max-tablet:border-2 max-tablet:border-[#e8f4f8] w-full z-[5] gap-10 flex-grow max-w-[560px] max-h-fit"
+      class="h-screen min-h-fit flex flex-col items-center max-tablet:min-h-screen max-tablet:m-0 max-tablet:border-2 max-tablet:border-[#e8f4f8] w-full z-[5] gap-10 flex-grow max-w-[560px] max-h-fit mt-20 hidden"
     >
       <h2 class="font-Handjet font-normal max-tablet:text-5xl">Contact</h2>
       <div

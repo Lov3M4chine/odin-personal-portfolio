@@ -190,4 +190,51 @@ function toggleScroll() {
   document.body.classList.toggle('no-scroll');
 }
 
+// ——————————————————————————————————————————————————
+// Link Event Listeners
+// ——————————————————————————————————————————————————
 
+let homeLink = document.querySelectorAll(".home-link");
+let projectsLink = document.querySelectorAll(".projects-link");
+let aboutLink = document.querySelectorAll(".about-link");
+let contactLink = document.querySelectorAll(".contact-link");
+let homeSection = document.getElementById("home-section");
+let projectSection = document.getElementById("projects-section");
+let aboutSection = document.getElementById("about-section");
+let contactSection = document.getElementById("contact-section");
+
+homeLink.forEach(function (link) {
+  link.addEventListener("click", function () {
+    homeSection.classList.remove('hidden');
+    projectSection.classList.add('hidden');
+    aboutSection.classList.add('hidden');
+    contactSection.classList.add('hidden');
+  });
+});
+
+projectsLink.forEach(function (link) {
+  link.addEventListener("click", function () {
+    projectSection.classList.remove('hidden');
+    homeSection.classList.add('hidden');
+    aboutSection.classList.add('hidden');
+    contactSection.classList.add('hidden');
+  });
+});
+
+aboutLink.forEach(function (link) {
+  link.addEventListener("click", function () {
+    aboutSection.classList.remove('hidden');
+    projectSection.classList.add('hidden');
+    homeSection.classList.add('hidden');
+    contactSection.classList.add('hidden');
+  });
+});
+
+contactLink.forEach(function (link) {
+  link.addEventListener("click", function () {
+    contactSection.classList.remove('hidden');
+    aboutSection.classList.add('hidden');
+    projectSection.classList.add('hidden');
+    homeSection.classList.add('hidden');
+  });
+});

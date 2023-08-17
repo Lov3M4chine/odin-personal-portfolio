@@ -237,7 +237,6 @@ body {
   min-height: 100vh;
   display: grid;
   place-content: center;
-  background: #cdb380;
   overflow-x: hidden;
 }
 
@@ -632,7 +631,7 @@ Desktop Navigation Glitch Effect
 }
 
 /* ——————————————————————————————————————————————————
-Test
+Mobile Name Glow Effect
 —————————————————————————————————————————————————— */
 
 h1 span {
