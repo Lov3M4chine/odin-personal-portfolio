@@ -1398,15 +1398,15 @@ h1 span {
 @keyframes glowing {
   0%, 50% {
     color: yellow;
-    filter: blur(2px);
-    text-shadow: 0 0 10px #00b3ff,
+    filter: blur(1px);
+    text-shadow: 0 0 2.5px #00b3ff,
+                 0 0 5px #00b3ff,
+                 0 0 10px #00b3ff,
                  0 0 20px #00b3ff,
-                 0 0 40px #00b3ff,
-                 0 0 80px #00b3ff,
-                 0 0 120px #00b3ff,
-                 0 0 200px #00b3ff,
-                 0 0 300px #00b3ff,
-                 0 0 400px #00b3ff;
+                 0 0 30px #00b3ff,
+                 0 0 50px #00b3ff,
+                 0 0 75px #00b3ff,
+                 0 0 100px #00b3ff;
   } 5%, 45% {
     color: white;
     text-shadow: none;
@@ -1414,15 +1414,15 @@ h1 span {
   }
   50%, 100% {
     color: white;
-    filter: blur(2px);
-    text-shadow: 0 0 10px #00b3ff,
+    filter: blur(1px);
+    text-shadow: 0 0 2.5px #00b3ff,
+                 0 0 5px #00b3ff,
+                 0 0 10px #00b3ff,
                  0 0 20px #00b3ff,
-                 0 0 40px #00b3ff,
-                 0 0 80px #00b3ff,
-                 0 0 120px #00b3ff,
-                 0 0 200px #00b3ff,
-                 0 0 300px #00b3ff,
-                 0 0 400px #00b3ff;
+                 0 0 30px #00b3ff,
+                 0 0 50px #00b3ff,
+                 0 0 75px #00b3ff,
+                 0 0 100px #00b3ff;
   } 55%, 95% {
     color: yellow;
     text-shadow: none;
