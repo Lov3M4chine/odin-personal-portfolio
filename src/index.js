@@ -170,6 +170,16 @@ let burger = document.getElementById("burger");
 let nav = document.getElementById("main-nav");
 let navLinks = document.querySelectorAll(".nav-link");
 
+navLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    console.log('Link clicked'); 
+    setTimeout(function () {
+      console.log('Timeout completed'); 
+    }, 800);
+  });
+});
+
+
 burger.addEventListener("click", function (e) {
   this.classList.toggle("is-open");
   nav.classList.toggle("is-open");
@@ -177,14 +187,6 @@ burger.addEventListener("click", function (e) {
   toggleScroll();
 });
 
-navLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
-    setTimeout(function () {
-      burger.click();
-      nav.classList.add("hidden");
-    }, 800);
-  });
-});
 
 function toggleScroll() {
   document.body.classList.toggle('no-scroll');
@@ -235,37 +237,44 @@ navigate(window.location.hash);
 homeLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.hash = 'home';
-    window.location.reload();
+    setTimeout(function () {
+      window.location.hash = 'home';
+      window.location.reload();
+    }, 800);
   });
 });
 
 projectsLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.hash = 'projects';
-    window.location.reload();
+    setTimeout(function () {
+      window.location.hash = 'projects';
+      window.location.reload();
+    }, 800);
   });
 });
 
 aboutLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.hash = 'about';
-    window.location.reload();
+    setTimeout(function () {
+      window.location.hash = 'about';
+      window.location.reload();
+    }, 800);
   });
 });
 
 contactLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.hash = 'contact';
-    window.location.reload();
+    setTimeout(function () {
+      window.location.hash = 'contact';
+      window.location.reload();
+    }, 800);
   });
 });
 
 window.addEventListener('popstate', function(event) {
-  // Reload the page when the user navigates with the back/forward button
   window.location.reload();
 });
 
@@ -290,7 +299,6 @@ function checkScreenSize() {
   }
 }
 
-// Run the function on load and on resize
 window.addEventListener('resize', checkScreenSize);
 window.addEventListener('load', checkScreenSize);
 
