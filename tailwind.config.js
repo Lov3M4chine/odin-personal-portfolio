@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         Handjet: ["Handjet", "sans-serif"],
         Play: ["Play", "sans-serif"],
+        Wallpoet: ["Wallpoet", "sans-serif"]
       },
     },
     screens: {
