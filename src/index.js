@@ -204,21 +204,20 @@ let aboutSection = document.getElementById("about-section");
 let contactSection = document.getElementById("contact-section");
 
 function navigate(hash) {
+  const sectionName = hash.replace('#', '');
+  const section = document.getElementById(sectionName + '-section');
   homeSection.classList.add('hidden');
   projectSection.classList.add('hidden');
   aboutSection.classList.add('hidden');
   contactSection.classList.add('hidden');
-
-  const sectionName = hash.replace('#', '');
-  
-  const section = document.getElementById(sectionName + '-section');
   
   if (section) {
     section.classList.remove('hidden');
+
   } else {
     homeSection.classList.remove('hidden');
   }
-  
+
   scrollToTop();
 }
 
