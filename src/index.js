@@ -277,4 +277,7 @@ function navigate(path) {
 
 navigate(window.location.pathname);
 
+window.dispatchEvent(new PopStateEvent('popstate', { state: history.state }));
+
+
 
