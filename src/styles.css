@@ -91,6 +91,15 @@ html {
   overflow: hidden;
 }
 
+.remove-sepia-on-hover img {
+  filter: sepia(1);
+  transition: filter 0.3s ease;
+}
+
+.remove-sepia-on-hover:hover img {
+  filter: sepia(0);
+}
+
 
 
 /* ——————————————————————————————————————————————————
