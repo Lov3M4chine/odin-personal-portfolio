@@ -260,6 +260,30 @@ contactLink.forEach(function (link) {
   });
 });
 
+// ——————————————————————————————————————————————————
+// Scanline Event Listener
+// ——————————————————————————————————————————————————
+
+function checkScreenSize() {
+  const breakpoint = 1200;
+
+  if (window.innerWidth > breakpoint) {
+    homeSection.classList.add('single-scanline');
+    projectSection.classList.add('single-scanline');
+    aboutSection.classList.add('single-scanline');
+    contactSection.classList.add('single-scanline');
+  } else {
+    homeSection.classList.remove('single-scanline');
+    projectSection.classList.remove('single-scanline');
+    aboutSection.classList.remove('single-scanline');
+    contactSection.classList.remove('single-scanline');
+  }
+}
+
+// Run the function on load and on resize
+window.addEventListener('resize', checkScreenSize);
+window.addEventListener('load', checkScreenSize);
+
 
 
 
