@@ -203,6 +203,11 @@ let projectSection = document.getElementById("projects-section");
 let aboutSection = document.getElementById("about-section");
 let contactSection = document.getElementById("contact-section");
 
+function scrollToTop() {
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; // For Safari
+}
+
 homeLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
@@ -211,7 +216,7 @@ homeLink.forEach(function (link) {
     aboutSection.classList.add('hidden');
     contactSection.classList.add('hidden');
     window.history.pushState({ section: 'home' }, '', '/home');
-    window.scrollTo(0, 0);
+    scrollToTop();
 
   });
 });
@@ -224,7 +229,7 @@ projectsLink.forEach(function (link) {
     aboutSection.classList.add('hidden');
     contactSection.classList.add('hidden');
     window.history.pushState({ section: 'projects' }, '', '/projects');
-    window.scrollTo(0, 0);
+    scrollToTop();
 
   });
 });
@@ -237,7 +242,7 @@ aboutLink.forEach(function (link) {
     homeSection.classList.add('hidden');
     contactSection.classList.add('hidden');
     window.history.pushState({ section: 'about' }, '', '/about');
-    window.scrollTo(0, 0);
+    scrollToTop();
   });
 });
 
@@ -249,7 +254,7 @@ contactLink.forEach(function (link) {
     projectSection.classList.add('hidden');
     homeSection.classList.add('hidden');
     window.history.pushState({ section: 'contact' }, '', '/contact');
-    window.scrollTo(0, 0);
+    scrollToTop();
 
   });
 });
