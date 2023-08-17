@@ -211,6 +211,8 @@ homeLink.forEach(function (link) {
     aboutSection.classList.add('hidden');
     contactSection.classList.add('hidden');
     window.history.pushState({ section: 'home' }, '', '/home');
+    window.scrollTo(0, 0);
+
   });
 });
 
@@ -222,6 +224,8 @@ projectsLink.forEach(function (link) {
     aboutSection.classList.add('hidden');
     contactSection.classList.add('hidden');
     window.history.pushState({ section: 'projects' }, '', '/projects');
+    window.scrollTo(0, 0);
+
   });
 });
 
@@ -233,6 +237,7 @@ aboutLink.forEach(function (link) {
     homeSection.classList.add('hidden');
     contactSection.classList.add('hidden');
     window.history.pushState({ section: 'about' }, '', '/about');
+    window.scrollTo(0, 0);
   });
 });
 
@@ -244,6 +249,8 @@ contactLink.forEach(function (link) {
     projectSection.classList.add('hidden');
     homeSection.classList.add('hidden');
     window.history.pushState({ section: 'contact' }, '', '/contact');
+    window.scrollTo(0, 0);
+
   });
 });
 
