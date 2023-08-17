@@ -611,23 +611,59 @@ Mobile Navigation
 }
 
 /* ——————————————————————————————————————————————————
-Desktop Navigation Glitch Effect
+Navigation Effect
 —————————————————————————————————————————————————— */
 
-.desktop-nav-anchor {
+.nav-anchor {
   color: #222;
   letter-spacing: 5px;
   cursor: pointer;
   text-transform: uppercase;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
-.desktop-nav-anchor:hover {
+.nav-anchor:hover {
   color: #fff;
   text-shadow: 0 0 5px #16549b,
               0 0 10px #16549b,
               0 0 25px #16549b,
               0 0 50px #16549b;
+}
+
+/* ——————————————————————————————————————————————————
+Selected Projects Nav Effect
+—————————————————————————————————————————————————— */
+
+.selected-projects-nav-effect {
+  color: yellow;
+  letter-spacing: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.selected-projects-nav-effect:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #16549b,
+              0 0 10px #16549b,
+              0 0 25px #16549b,
+              0 0 50px #16549b;
+}
+
+/* ——————————————————————————————————————————————————
+Social Link Grow Effect
+—————————————————————————————————————————————————— */
+
+.social-link {
+  /* Set the initial scale to 1 (original size) */
+  transform: scale(1);
+  /* Add a transition effect */
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  /* Scale the object up to 1.1 times the original size when hovered */
+  transform: scale(1.3);
 }
 
 /* ——————————————————————————————————————————————————
