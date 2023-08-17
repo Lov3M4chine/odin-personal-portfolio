@@ -264,6 +264,11 @@ contactLink.forEach(function (link) {
   });
 });
 
+window.addEventListener('popstate', function(event) {
+  // Reload the page when the user navigates with the back/forward button
+  window.location.reload();
+});
+
 
 // ——————————————————————————————————————————————————
 // Scanline Event Listener
