@@ -19,14 +19,14 @@ Desktop Nav
     <nav id="nav" class="fixed max-tablet:hidden top-0 z-50">
       <div class="flex flex-col items-center">
         <menu
-          class="bg-[yellow] flex w-full justify-between pl-10 pr-10"
+          class="bg-[yellow] flex w-full justify-center gap-20 pl-10 pr-10 rounded-lg"
         >
 
         <li
         class="desktop-nav-list"
       >
         <a
-          class="whitespace-nowrap desktop-nav-anchor home-link"
+          class="whitespace-nowrap nav-anchor home-link"
           data-text="William Alderman"
 
         >
@@ -44,7 +44,7 @@ Desktop Nav
           class=""
         >
           <a
-            class="desktop-nav-anchor projects-link"
+            class="nav-anchor projects-link"
             data-text="Projects"
 
           >
@@ -61,7 +61,7 @@ Desktop Nav
         <li
             class="desktop-nav-list about-link"
           >
-            <a class="desktop-nav-anchor" data-text="About"
+            <a class="nav-anchor" data-text="About"
               >About</a
             >
           </li>
@@ -75,14 +75,14 @@ Desktop Nav
         <li
         class=""
       >
-        <a class="desktop-nav-anchor contact-link" data-text="Contact"
+        <a class="nav-anchor contact-link" data-text="Contact"
           >Contact</a
         >
           </li>
 
         </menu>
         <svg
-          class="rotate-180 w-screen max-w-[1920px] -translate-y-1"
+          class="rotate-180 w-screen max-w-[1920px] -translate-y-4 -z-10"
           height="40px"
         >
           <path
@@ -108,7 +108,7 @@ Mobile Nav
           <ul>
             <li>
               <a
-                class="link-glitch nav-link home-link"
+                class="nav-anchor nav-link home-link"
                 data-text="William Alderman"
                 >
                 William Alderman</a
@@ -116,7 +116,7 @@ Mobile Nav
             </li>
             <li>
               <a
-                class="link-glitch nav-link projects-link"
+                class="nav-anchor nav-link projects-link"
                 data-text="Projects"
         
               >
@@ -125,7 +125,7 @@ Mobile Nav
             </li>
             <li>
               <a
-                class="link-glitch nav-link about-link"
+                class="nav-anchor nav-link about-link"
                 data-text="About"
       
               >
@@ -134,7 +134,7 @@ Mobile Nav
             </li>
             <li>
               <a
-                class="link-glitch nav-link contact-link"
+                class="nav-anchor nav-link contact-link"
                 data-text="Contact"
 
                 >Contact</a
@@ -233,11 +233,11 @@ Projects Page
         >
           <div>
             <a
-              class="link-glitch accent-text-color max-tablet:flex max-tablet:text-3xl w-fit cursor-pointer"
+              class="selected-projects-nav-effect max-tablet:flex max-tablet:text-3xl w-fit cursor-pointer"
               data-text="Project 1"
               >Project 1</a
             >
-            <p class="text-lg max-tablet:text-sm">
+            <p class="text-lg max-tablet:text-sm p-3 max-tablet:p-0">
               Description of skill developed
             </p>
           </div>
@@ -257,11 +257,11 @@ Projects Page
           />
           <div class="max-tablet:order-1">
             <a
-              class="link-glitch project-2 accent-text-color max-tablet:flex max-tablet:justify-end max-tablet:text-3xl w-fit max-tablet:ml-auto cursor-pointer"
+              class="selected-projects-nav-effect project-2 accent-text-color max-tablet:flex max-tablet:justify-end max-tablet:text-3xl w-fit max-tablet:ml-auto cursor-pointer"
               data-text="Project 2"
               >Project 2</a
             >
-            <p class="text-lg max-tablet:text-sm">
+            <p class="text-lg max-tablet:text-sm p-3 max-tablet:p-0">
               Description of skill developed
             </p>
           </div>
@@ -271,11 +271,11 @@ Projects Page
         >
           <div>
             <a
-              class="link-glitch accent-text-color max-tablet:flex max-tablet:text-3xl w-fit cursor-pointer"
+              class="selected-projects-nav-effect accent-text-color max-tablet:flex max-tablet:text-3xl w-fit cursor-pointer"
               data-text="Project 3"
               >Project 3</a
             >
-            <p class="text-lg max-tablet:text-sm">
+            <p class="text-lg max-tablet:text-sm p-3 max-tablet:p-0">
               Description of skill developed
             </p>
           </div>
@@ -295,11 +295,11 @@ Projects Page
           />
           <div class="max-tablet:order-1">
             <a
-              class="link-glitch project-4 accent-text-color max-tablet:flex max-tablet:justify-end max-tablet:text-3xl w-fit max-tablet:ml-auto cursor-pointer"
+              class="selected-projects-nav-effect project-4 accent-text-color max-tablet:flex max-tablet:justify-end max-tablet:text-3xl w-fit max-tablet:ml-auto cursor-pointer"
               data-text="Project 4"
               >Project 4</a
             >
-            <p class="text-lg max-tablet:text-sm">
+            <p class="text-lg max-tablet:text-sm p-3 max-tablet:p-0">
               Description of skill developed
             </p>
           </div>
@@ -406,7 +406,7 @@ Contacts Page
         >
           Phone:
           <a
-            class="link-glitch accent-text-color"
+            class="selected-projects-nav-effect accent-text-color"
             data-text="(480) 688-4307"
             href="tel:+14806884307"
             >(480) 688-4307</a
@@ -414,7 +414,7 @@ Contacts Page
           <br /><br>
           Email:
           <a
-            class="link-glitch accent-text-color"
+            class="selected-projects-nav-effect accent-text-color"
             data-text="william-alderman@outlook.com"
             href="mailto:william-alderman@outlook.com"
             >william-alderman@outlook.com</a
@@ -425,9 +425,9 @@ Contacts Page
           class="max-tablet:flex max-tablet:w-full max-tablet:justify-center"
         >
           <div
-            class="flex max-tablet:flex-col justify-center items-center gap-20 p-6 max-tablet:w-64 mr-40 max-tablet:mr-0"
+            class="flex max-tablet:flex-col justify-center items-center gap-20 p-6 max-tablet:w-64 mr-40 max-tablet:mr-0 "
           >
-          <a href="https://github.com/Lov3M4chine" target="_blank" rel="noopener noreferrer" title="Link to Github">
+          <a href="https://github.com/Lov3M4chine" target="_blank" rel="noopener noreferrer" title="Link to Github" class="social-link">
             <svg width="100px" viewBox="0 0 128 128">
               <g fill="yellow">
                 <path
@@ -446,7 +446,7 @@ Contacts Page
             </svg>
           </a>
 
-          <a href="https://www.linkedin.com/in/william-alderman-35726099/" target="_blank" rel="noopener noreferrer" title="Link to LinkedIn" class="linkedin max-tablet:-translate-x-10">
+          <a href="https://www.linkedin.com/in/william-alderman-35726099/" target="_blank" rel="noopener noreferrer" title="Link to LinkedIn" class="linkedin max-tablet:-translate-x-10 social-link">
             <svg width="200px" viewBox="0 0 128 128">
               <path
                 fill="yellow"
