@@ -203,93 +203,65 @@ let projectSection = document.getElementById("projects-section");
 let aboutSection = document.getElementById("about-section");
 let contactSection = document.getElementById("contact-section");
 
-function scrollToTop() {
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  document.body.scrollTop = 0; // For Safari
+function navigate(hash) {
+  homeSection.classList.add('hidden');
+  projectSection.classList.add('hidden');
+  aboutSection.classList.add('hidden');
+  contactSection.classList.add('hidden');
+
+  const sectionName = hash.replace('#', '');
+  
+  const section = document.getElementById(sectionName + '-section');
+  
+  if (section) {
+    section.classList.remove('hidden');
+  } else {
+    homeSection.classList.remove('hidden');
+  }
+  
+  scrollToTop();
 }
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
+window.addEventListener('hashchange', function() {
+  navigate(window.location.hash);
+});
+
+navigate(window.location.hash);
 
 homeLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    homeSection.classList.remove('hidden');
-    projectSection.classList.add('hidden');
-    aboutSection.classList.add('hidden');
-    contactSection.classList.add('hidden');
-    window.history.pushState({ section: 'home' }, '', '/home');
-    scrollToTop();
-
+    window.location.hash = 'home';
   });
 });
 
 projectsLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    projectSection.classList.remove('hidden');
-    homeSection.classList.add('hidden');
-    aboutSection.classList.add('hidden');
-    contactSection.classList.add('hidden');
-    window.history.pushState({ section: 'projects' }, '', '/projects');
-    scrollToTop();
-
+    window.location.hash = 'projects';
   });
 });
 
 aboutLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    aboutSection.classList.remove('hidden');
-    projectSection.classList.add('hidden');
-    homeSection.classList.add('hidden');
-    contactSection.classList.add('hidden');
-    window.history.pushState({ section: 'about' }, '', '/about');
-    scrollToTop();
+    window.location.hash = 'about';
   });
 });
 
 contactLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    contactSection.classList.remove('hidden');
-    aboutSection.classList.add('hidden');
-    projectSection.classList.add('hidden');
-    homeSection.classList.add('hidden');
-    window.history.pushState({ section: 'contact' }, '', '/contact');
-    scrollToTop();
-
+    window.location.hash = 'contact';
   });
 });
 
-window.addEventListener('popstate', function(event) {
-  homeSection.classList.add('hidden');
-  projectSection.classList.add('hidden');
-  aboutSection.classList.add('hidden');
-  contactSection.classList.add('hidden');
-  
-  if (event.state && event.state.section) {
-    document.getElementById(event.state.section + '-section').classList.remove('hidden');
-  } else {
-    homeSection.classList.remove('hidden');
-  }
-});
 
-function navigate(path) {
-  homeSection.classList.add('hidden');
-  projectSection.classList.add('hidden');
-  aboutSection.classList.add('hidden');
-  contactSection.classList.add('hidden');
-  
-  const section = document.getElementById(path.substring(1) + '-section');
-
-  if (section) {
-    section.classList.remove('hidden');
-  } else {
-    homeSection.classList.remove('hidden');
-  }
-}
-
-navigate(window.location.pathname);
-
-window.dispatchEvent(new PopStateEvent('popstate', { state: history.state }));
 
 
 
