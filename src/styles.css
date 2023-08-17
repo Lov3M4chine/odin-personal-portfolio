@@ -624,10 +624,10 @@ Desktop Navigation Glitch Effect
 
 .desktop-nav-anchor:hover {
   color: #fff;
-  text-shadow: 0 0 5px #ff00ff,
-              0 0 10px #ff00ff,
-              0 0 25px #ff00ff,
-              0 0 50px #ff00ff;
+  text-shadow: 0 0 5px #16549b,
+              0 0 10px #16549b,
+              0 0 25px #16549b,
+              0 0 50px #16549b;
 }
 
 /* ——————————————————————————————————————————————————
