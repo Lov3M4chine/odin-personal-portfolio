@@ -1,6 +1,3 @@
-/*!************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/styles.css ***!
-  \************************************************************************************************************/
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 *//*
@@ -747,7 +744,6 @@ video {
 }
 
 @media screen {
-  
 }
 
 @font-face {
@@ -812,7 +808,7 @@ html {
 
 .linkedin svg {
   position: absolute;
-  width: 200px; 
+  width: 200px;
 }
 
 .no-scroll {
@@ -826,11 +822,6 @@ html {
 .remove-sepia-on-hover:hover img {
   filter: sepia(0);
 }
-
-
-
-
-
 
 /* ——————————————————————————————————————————————————
 Projects Slide-In
@@ -1146,7 +1137,6 @@ Text Typing Effect
   background-color: #9ba5b4;
   font-size: 10rem;
   font-family: "Play", sans-serif;
-
 }
 
 .blinking-wrapper h1 {
@@ -1155,7 +1145,7 @@ Text Typing Effect
   white-space: nowrap;
   overflow: hidden;
   animation: typing 2s steps(13, end),
-            blink-caret 0.5s step-end infinite alternate;
+    blink-caret 0.5s step-end infinite alternate;
   animation-delay: 2s; /* this line delays both animations by 2 seconds */
 }
 @keyframes typing {
@@ -1357,10 +1347,8 @@ Navigation Effect
 
 .nav-anchor:hover {
   color: #fff;
-  text-shadow: 0 0 5px #16549b,
-              0 0 10px #16549b,
-              0 0 25px #16549b,
-              0 0 50px #16549b;
+  text-shadow: 0 0 5px #16549b, 0 0 10px #16549b, 0 0 25px #16549b,
+    0 0 50px #16549b;
 }
 
 /* ——————————————————————————————————————————————————
@@ -1372,15 +1360,13 @@ Mobile Navigation Effect
   letter-spacing: 5px;
   cursor: pointer;
   text-transform: uppercase;
-  transition: 1.0s;
+  transition: 1s;
 }
 
 .mobile-nav-anchor:hover {
   color: #fff;
-  text-shadow: 0 0 5px #16549b,
-              0 0 10px #16549b,
-              0 0 25px #16549b,
-              0 0 50px #16549b;
+  text-shadow: 0 0 5px #16549b, 0 0 10px #16549b, 0 0 25px #16549b,
+    0 0 50px #16549b;
 }
 
 /* ——————————————————————————————————————————————————
@@ -1397,10 +1383,8 @@ Selected Projects Nav Effect
 
 .selected-projects-nav-effect:hover {
   color: #fff;
-  text-shadow: 0 0 5px #16549b,
-              0 0 10px #16549b,
-              0 0 25px #16549b,
-              0 0 50px #16549b;
+  text-shadow: 0 0 5px #16549b, 0 0 10px #16549b, 0 0 25px #16549b,
+    0 0 50px #16549b;
 }
 
 /* ——————————————————————————————————————————————————
@@ -1426,101 +1410,97 @@ h1 span {
 }
 
 @keyframes glowing {
-  0%, 50% {
+  0%,
+  50% {
     color: yellow;
     filter: blur(1px);
-    text-shadow: 0 0 2.5px #00b3ff,
-                 0 0 5px #00b3ff,
-                 0 0 10px #00b3ff,
-                 0 0 20px #00b3ff,
-                 0 0 30px #00b3ff,
-                 0 0 50px #00b3ff,
-                 0 0 75px #00b3ff,
-                 0 0 100px #00b3ff;
-  } 5%, 45% {
+    text-shadow: 0 0 2.5px #00b3ff, 0 0 5px #00b3ff, 0 0 10px #00b3ff,
+      0 0 20px #00b3ff, 0 0 30px #00b3ff, 0 0 50px #00b3ff, 0 0 75px #00b3ff,
+      0 0 100px #00b3ff;
+  }
+  5%,
+  45% {
     color: white;
     text-shadow: none;
     filter: blur(0px);
   }
-  50%, 100% {
+  50%,
+  100% {
     color: white;
     filter: blur(1px);
-    text-shadow: 0 0 2.5px #00b3ff,
-                 0 0 5px #00b3ff,
-                 0 0 10px #00b3ff,
-                 0 0 20px #00b3ff,
-                 0 0 30px #00b3ff,
-                 0 0 50px #00b3ff,
-                 0 0 75px #00b3ff,
-                 0 0 100px #00b3ff;
-  } 55%, 95% {
+    text-shadow: 0 0 2.5px #00b3ff, 0 0 5px #00b3ff, 0 0 10px #00b3ff,
+      0 0 20px #00b3ff, 0 0 30px #00b3ff, 0 0 50px #00b3ff, 0 0 75px #00b3ff,
+      0 0 100px #00b3ff;
+  }
+  55%,
+  95% {
     color: yellow;
     text-shadow: none;
     filter: blur(0px);
   }
 }
 
-h1 span:nth-child(1){
+h1 span:nth-child(1) {
   animation-delay: 0s;
 }
 
-h1 span:nth-child(2){
-  animation-delay: .5s;
+h1 span:nth-child(2) {
+  animation-delay: 0.5s;
 }
 
-h1 span:nth-child(3){
+h1 span:nth-child(3) {
   animation-delay: 1s;
 }
 
-h1 span:nth-child(4){
+h1 span:nth-child(4) {
   animation-delay: 1.5s;
 }
 
-h1 span:nth-child(5){
+h1 span:nth-child(5) {
   animation-delay: 2s;
 }
 
-h1 span:nth-child(6){
+h1 span:nth-child(6) {
   animation-delay: 2.5s;
 }
 
-h1 span:nth-child(7){
+h1 span:nth-child(7) {
   animation-delay: 3s;
 }
 
-h1 span:nth-child(8){
+h1 span:nth-child(8) {
   animation-delay: 3.5s;
 }
 
-h1 span:nth-child(9){
+h1 span:nth-child(9) {
   animation-delay: 4s;
 }
 
-h1 span:nth-child(10){
+h1 span:nth-child(10) {
   animation-delay: 4.5s;
 }
 
-h1 span:nth-child(11){
+h1 span:nth-child(11) {
   animation-delay: 5s;
 }
 
-h1 span:nth-child(12){
+h1 span:nth-child(12) {
   animation-delay: 5.5s;
 }
 
-h1 span:nth-child(13){
+h1 span:nth-child(13) {
   animation-delay: 6s;
 }
 
-h1 span:nth-child(14){
+h1 span:nth-child(14) {
   animation-delay: 6.5s;
 }
 
-h1 span:nth-child(15){
+h1 span:nth-child(15) {
   animation-delay: 7s;
 }
 
-h1 span:nth-child(16){
+h1 span:nth-child(16) {
   animation-delay: 7.5s;
 }
 
@@ -1545,7 +1525,7 @@ CRT Animation
     opacity: 0.5;
   }
   50% {
-    opacity: 0.0;
+    opacity: 0;
   }
   60% {
     opacity: 0.5;
@@ -1553,13 +1533,13 @@ CRT Animation
   70% {
     opacity: 0.4;
   }
-   80% {
+  80% {
     opacity: 0.3;
   }
   90% {
     opacity: 0.2;
   }
-   100% {
+  100% {
     opacity: 0.1;
   }
 }
@@ -1687,7 +1667,8 @@ CRT Animation
   animation: textShadow 1.6s infinite;
 }
 
-.single-scanline:before, .single-scanline:after {
+.single-scanline:before,
+.single-scanline:after {
   display: block;
   pointer-events: none;
   content: "";
@@ -1696,7 +1677,6 @@ CRT Animation
   left: 0;
   right: 0;
   top: 0;
-
 }
 .single-scanline:before {
   width: 100%;
@@ -1721,8 +1701,12 @@ Page Transition Effects
 }
 
 @keyframes fadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .fade-in {
@@ -1730,8 +1714,12 @@ Page Transition Effects
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hover\:font-extralight:hover {
@@ -1963,13 +1951,4 @@ Page Transition Effects
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 }
-
-
-
-
-
-
-
-
-
 
