@@ -1786,6 +1786,18 @@ Page Transition Effects
     margin-top: 5rem;
   }
 
+  .max-tablet\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .max-tablet\:mb-40 {
+    margin-bottom: 10rem;
+  }
+
+  .max-tablet\:mb-32 {
+    margin-bottom: 8rem;
+  }
+
   .max-tablet\:block {
     display: block;
   }
