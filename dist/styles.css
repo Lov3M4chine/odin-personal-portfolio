@@ -497,6 +497,15 @@ video {
 .fixed {
   position: fixed;
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.bottom-0 {
+  bottom: 0px;
+}
 .left-0 {
   left: 0px;
 }
@@ -820,6 +829,8 @@ html {
 .remove-sepia-on-hover:hover img {
   filter: sepia(0);
 }
+
+
 
 
 
@@ -1515,7 +1526,7 @@ h1 span:nth-child(16){
 }
 
 /* ——————————————————————————————————————————————————
-Page Transistion Animation
+CRT Animation
 —————————————————————————————————————————————————— */
 
 @keyframes flicker {
@@ -1701,13 +1712,38 @@ Page Transistion Animation
     transform: translate3d(0, 200000%, 0);
   }
 }
+
+/* ——————————————————————————————————————————————————
+Page Transition Effects
+—————————————————————————————————————————————————— */
+
+.fade-out {
+  animation: fadeOut 1s;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .hover\:font-extralight:hover {
   font-weight: 200;
 }
+
 .hover\:sepia-0:hover {
   --tw-sepia: sepia(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+
 @media not all and (min-width: 1200px) {
 
   .max-tablet\:order-1 {
@@ -1724,6 +1760,10 @@ Page Transistion Animation
 
   .max-tablet\:m-0 {
     margin: 0px;
+  }
+
+  .max-tablet\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .max-tablet\:ml-0 {

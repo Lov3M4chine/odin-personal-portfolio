@@ -172,9 +172,8 @@ let navLinks = document.querySelectorAll(".nav-link");
 
 navLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    console.log('Link clicked'); 
     setTimeout(function () {
-      console.log('Timeout completed'); 
+      burger.click();
     }, 800);
   });
 });
@@ -204,78 +203,106 @@ let homeSection = document.getElementById("home-section");
 let projectSection = document.getElementById("projects-section");
 let aboutSection = document.getElementById("about-section");
 let contactSection = document.getElementById("contact-section");
+let currentSection = homeSection;
+let userInitiatedNavigation = false;
+
+
 
 function navigate(hash) {
+
+  if (hash === '') {
+    hash = '#home';
+  }
+  
   const sectionName = hash.replace('#', '');
   const section = document.getElementById(sectionName + '-section');
-  homeSection.classList.add('hidden');
-  projectSection.classList.add('hidden');
-  aboutSection.classList.add('hidden');
-  contactSection.classList.add('hidden');
-  
-  if (section) {
-    section.classList.remove('hidden');
-
-  } else {
-    homeSection.classList.remove('hidden');
+ 
+  if (currentSection === section) {
+    return;
   }
-
-  scrollToTop();
-}
+ 
+  if (userInitiatedNavigation) {
+    currentSection.classList.add('fade-out');
+ 
+    setTimeout(function() {
+      currentSection.classList.add('hidden');
+      currentSection.classList.remove('fade-out');
+      section.classList.remove('hidden');
+      section.classList.add('fade-in');
+ 
+      setTimeout(function() {
+        section.classList.remove('fade-in');
+        currentSection = section;
+        scrollToTop();
+      }, 1000);
+ 
+    }, 1000);
+  } else {
+    currentSection.classList.add('hidden');
+    section.classList.remove('hidden');
+    currentSection = section;
+    scrollToTop();
+  }
+  
+  // Reset the flag after navigation
+  userInitiatedNavigation = false;
+ }
+ 
 
 function scrollToTop() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 window.addEventListener('hashchange', function() {
   navigate(window.location.hash);
 });
 
-navigate(window.location.hash);
+navigate(window.location.hash || '#home');
 
 homeLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    setTimeout(function () {
-      window.location.hash = 'home';
-      window.location.reload();
-    }, 800);
+    userInitiatedNavigation = true;
+    window.location.hash = 'home';
+    setTimeout(function(){
+      location.reload();
+    }, 2000);
   });
 });
 
 projectsLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    setTimeout(function () {
-      window.location.hash = 'projects';
-      window.location.reload();
-    }, 800);
+    userInitiatedNavigation = true;
+    window.location.hash = 'projects';
   });
 });
 
 aboutLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    setTimeout(function () {
-      window.location.hash = 'about';
-      window.location.reload();
-    }, 800);
+    userInitiatedNavigation = true;
+    window.location.hash = 'about';
   });
 });
 
 contactLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    setTimeout(function () {
-      window.location.hash = 'contact';
-      window.location.reload();
-    }, 800);
+    userInitiatedNavigation = true;
+    window.location.hash = 'contact';
   });
 });
 
 window.addEventListener('popstate', function(event) {
-  window.location.reload();
+  // Get the current hash from the URL
+  let hash = window.location.hash;
+  
+  if (hash === '' || hash === '#home') {
+    setTimeout(function(){
+      location.reload();
+    }, 2000);
+  }
 });
 
 
