@@ -728,6 +728,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
 }
+.opacity-0 {
+  opacity: 0;
+}
 .sepia {
   --tw-sepia: sepia(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1149,6 +1152,7 @@ Text Typing Effect
   background-color: #9ba5b4;
   font-size: 10rem;
   font-family: "Play", sans-serif;
+
 }
 
 .blinking-wrapper h1 {
@@ -1157,7 +1161,8 @@ Text Typing Effect
   white-space: nowrap;
   overflow: hidden;
   animation: typing 2s steps(13, end),
-    blink-caret 0.5s step-end infinite alternate;
+            blink-caret 0.5s step-end infinite alternate;
+  animation-delay: 2s; /* this line delays both animations by 2 seconds */
 }
 @keyframes typing {
   from {
@@ -1766,6 +1771,14 @@ Page Transition Effects
     margin-bottom: 2.5rem;
   }
 
+  .max-tablet\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .max-tablet\:mb-40 {
+    margin-bottom: 10rem;
+  }
+
   .max-tablet\:ml-0 {
     margin-left: 0px;
   }
@@ -1786,16 +1799,12 @@ Page Transition Effects
     margin-top: 5rem;
   }
 
-  .max-tablet\:mb-20 {
-    margin-bottom: 5rem;
+  .max-tablet\:mb-14 {
+    margin-bottom: 3.5rem;
   }
 
-  .max-tablet\:mb-40 {
-    margin-bottom: 10rem;
-  }
-
-  .max-tablet\:mb-32 {
-    margin-bottom: 8rem;
+  .max-tablet\:mb-16 {
+    margin-bottom: 4rem;
   }
 
   .max-tablet\:block {
@@ -1808,6 +1817,11 @@ Page Transition Effects
 
   .max-tablet\:hidden {
     display: none;
+  }
+
+  .max-tablet\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .max-tablet\:min-h-screen {
@@ -1898,8 +1912,8 @@ Page Transition Effects
     overflow: hidden;
   }
 
-  .max-tablet\:whitespace-nowrap {
-    white-space: nowrap;
+  .max-tablet\:whitespace-normal {
+    white-space: normal;
   }
 
   .max-tablet\:border-2 {
