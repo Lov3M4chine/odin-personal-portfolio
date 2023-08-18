@@ -249,9 +249,20 @@ function navigate(hash) {
  }
  
 
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+ function scrollToTop() {
+  // Save the current scroll behavior
+  const originalScrollBehavior = document.documentElement.style.scrollBehavior;
+
+  // Temporarily disable smooth scrolling
+  document.documentElement.style.scrollBehavior = 'auto';
+
+  // Scroll to the top instantly
+  window.scrollTo(0, 0);
+
+  // Restore the original scroll behavior after the scroll
+  document.documentElement.style.scrollBehavior = originalScrollBehavior;
 }
+
 
 window.addEventListener('hashchange', function() {
   navigate(window.location.hash);

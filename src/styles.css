@@ -417,6 +417,7 @@ Text Typing Effect
   background-color: #9ba5b4;
   font-size: 10rem;
   font-family: "Play", sans-serif;
+
 }
 
 .blinking-wrapper h1 {
@@ -425,7 +426,8 @@ Text Typing Effect
   white-space: nowrap;
   overflow: hidden;
   animation: typing 2s steps(13, end),
-    blink-caret 0.5s step-end infinite alternate;
+            blink-caret 0.5s step-end infinite alternate;
+  animation-delay: 2s; /* this line delays both animations by 2 seconds */
 }
 @keyframes typing {
   from {
