@@ -506,9 +506,6 @@ video {
 .bottom-0 {
   bottom: 0px;
 }
-.left-0 {
-  left: 0px;
-}
 .top-0 {
   top: 0px;
 }
@@ -663,9 +660,6 @@ video {
 .bg-\[yellow\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 0 / var(--tw-bg-opacity));
-}
-.bg-cover {
-  background-size: cover;
 }
 .p-10 {
   padding: 2.5rem;
@@ -1915,14 +1909,6 @@ Page Transition Effects
   .max-tablet\:border-\[\#e8f4f8\] {
     --tw-border-opacity: 1;
     border-color: rgb(232 244 248 / var(--tw-border-opacity));
-  }
-
-  .max-tablet\:bg-\[url\(\'\.\/imgs\/victor-rodriguez-UrfpprfDB0k-unsplash\.jpg\'\)\] {
-    background-image: url(0ffee2ea54e3180d6f67.jpg);
-  }
-
-  .max-tablet\:bg-cover {
-    background-size: cover;
   }
 
   .max-tablet\:p-0 {
