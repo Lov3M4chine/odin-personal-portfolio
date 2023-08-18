@@ -6,7 +6,6 @@ import "./imgs/personal-photo3.jpg";
 import "./imgs/professional-photo.png";
 import "./imgs/professional-photo2.jpg";
 import "./imgs/razor-top-black.svg";
-import "./imgs/victor-rodriguez-UrfpprfDB0k-unsplash.jpg";
 
 // ——————————————————————————————————————————————————
 // Projects Slide-In
