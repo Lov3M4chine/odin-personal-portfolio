@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateWasLinkClicked() {
     wasLinkClicked = true;
   }
-  
+
   checkSlide();
 
   window.addEventListener("scroll", function () {
@@ -177,7 +177,6 @@ navLinks.forEach(function (link) {
   });
 });
 
-
 burger.addEventListener("click", function (e) {
   this.classList.toggle("is-open");
   nav.classList.toggle("is-open");
@@ -185,9 +184,8 @@ burger.addEventListener("click", function (e) {
   toggleScroll();
 });
 
-
 function toggleScroll() {
-  document.body.classList.toggle('no-scroll');
+  document.body.classList.toggle("no-scroll");
 }
 
 // ——————————————————————————————————————————————————
@@ -205,76 +203,65 @@ let contactSection = document.getElementById("contact-section");
 let currentSection = homeSection;
 let userInitiatedNavigation = false;
 
-
-
 function navigate(hash) {
-
-  if (hash === '') {
-    hash = '#home';
+  if (hash === "") {
+    hash = "#home";
   }
-  
-  const sectionName = hash.replace('#', '');
-  const section = document.getElementById(sectionName + '-section');
- 
+
+  const sectionName = hash.replace("#", "");
+  const section = document.getElementById(sectionName + "-section");
+
   if (currentSection === section) {
     return;
   }
- 
+
   if (userInitiatedNavigation) {
-    currentSection.classList.add('fade-out');
- 
-    setTimeout(function() {
-      currentSection.classList.add('hidden');
-      currentSection.classList.remove('fade-out');
-      section.classList.remove('hidden');
-      section.classList.add('fade-in');
- 
-      setTimeout(function() {
-        section.classList.remove('fade-in');
+    currentSection.classList.add("fade-out");
+
+    setTimeout(function () {
+      currentSection.classList.add("hidden");
+      currentSection.classList.remove("fade-out");
+      section.classList.remove("hidden");
+      section.classList.add("fade-in");
+
+      setTimeout(function () {
+        section.classList.remove("fade-in");
         currentSection = section;
         scrollToTop();
       }, 1000);
- 
     }, 1000);
   } else {
-    currentSection.classList.add('hidden');
-    section.classList.remove('hidden');
+    currentSection.classList.add("hidden");
+    section.classList.remove("hidden");
     currentSection = section;
     scrollToTop();
   }
-  
-  // Reset the flag after navigation
-  userInitiatedNavigation = false;
- }
- 
 
- function scrollToTop() {
-  // Save the current scroll behavior
+  userInitiatedNavigation = false;
+}
+
+function scrollToTop() {
   const originalScrollBehavior = document.documentElement.style.scrollBehavior;
 
-  // Temporarily disable smooth scrolling
-  document.documentElement.style.scrollBehavior = 'auto';
+  document.documentElement.style.scrollBehavior = "auto";
 
-  // Scroll to the top instantly
   window.scrollTo(0, 0);
 
-  // Restore the original scroll behavior after the scroll
   document.documentElement.style.scrollBehavior = originalScrollBehavior;
 }
 
-
-window.addEventListener('hashchange', function() {
+window.addEventListener("hashchange", function () {
   navigate(window.location.hash);
 });
 
-navigate(window.location.hash || '#home');
+navigate(window.location.hash || "#home");
 
 homeLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
     userInitiatedNavigation = true;
-    window.location.hash = 'home';
-    setTimeout(function(){
+    window.location.hash = "home";
+    setTimeout(function () {
       location.reload();
     }, 2000);
   });
@@ -284,7 +271,7 @@ projectsLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
     userInitiatedNavigation = true;
-    window.location.hash = 'projects';
+    window.location.hash = "projects";
   });
 });
 
@@ -292,7 +279,7 @@ aboutLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
     userInitiatedNavigation = true;
-    window.location.hash = 'about';
+    window.location.hash = "about";
   });
 });
 
@@ -300,21 +287,20 @@ contactLink.forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
     userInitiatedNavigation = true;
-    window.location.hash = 'contact';
+    window.location.hash = "contact";
   });
 });
 
-window.addEventListener('popstate', function(event) {
+window.addEventListener("popstate", function (event) {
   // Get the current hash from the URL
   let hash = window.location.hash;
-  
-  if (hash === '' || hash === '#home') {
-    setTimeout(function(){
+
+  if (hash === "" || hash === "#home") {
+    setTimeout(function () {
       location.reload();
     }, 2000);
   }
 });
-
 
 // ——————————————————————————————————————————————————
 // Scanline Event Listener
@@ -324,22 +310,17 @@ function checkScreenSize() {
   const breakpoint = 1200;
 
   if (window.innerWidth > breakpoint) {
-    homeSection.classList.add('single-scanline');
-    projectSection.classList.add('single-scanline');
-    aboutSection.classList.add('single-scanline');
-    contactSection.classList.add('single-scanline');
+    homeSection.classList.add("single-scanline");
+    projectSection.classList.add("single-scanline");
+    aboutSection.classList.add("single-scanline");
+    contactSection.classList.add("single-scanline");
   } else {
-    homeSection.classList.remove('single-scanline');
-    projectSection.classList.remove('single-scanline');
-    aboutSection.classList.remove('single-scanline');
-    contactSection.classList.remove('single-scanline');
+    homeSection.classList.remove("single-scanline");
+    projectSection.classList.remove("single-scanline");
+    aboutSection.classList.remove("single-scanline");
+    contactSection.classList.remove("single-scanline");
   }
 }
 
-window.addEventListener('resize', checkScreenSize);
-window.addEventListener('load', checkScreenSize);
-
-
-
-
-
+window.addEventListener("resize", checkScreenSize);
+window.addEventListener("load", checkScreenSize);
