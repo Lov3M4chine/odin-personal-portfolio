@@ -524,6 +524,9 @@ video {
 .mb-10 {
   margin-bottom: 2.5rem;
 }
+.mb-16 {
+  margin-bottom: 4rem;
+}
 .mr-40 {
   margin-right: 10rem;
 }
@@ -727,9 +730,6 @@ video {
 .text-slate-900 {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
-}
-.opacity-0 {
-  opacity: 0;
 }
 .sepia {
   --tw-sepia: sepia(100%);
@@ -1797,14 +1797,6 @@ Page Transition Effects
 
   .max-tablet\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .max-tablet\:mb-14 {
-    margin-bottom: 3.5rem;
-  }
-
-  .max-tablet\:mb-16 {
-    margin-bottom: 4rem;
   }
 
   .max-tablet\:block {
